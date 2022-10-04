@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +24,8 @@ public class QuizActivity extends AppCompatActivity {
     Button[] options;
 
     TextView timer;
+
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,8 @@ public class QuizActivity extends AppCompatActivity {
         options = new Button[]{optionA, optionB, optionC, optionD};
 
         timer = findViewById(R.id.timer);
+
+        image = findViewById(R.id.image);
     }
 
     private void setupButtons() {
