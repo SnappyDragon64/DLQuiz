@@ -15,12 +15,12 @@
             android:layout_marginTop="16dp"/>
 
     <ScrollView
-            android:layout_width="410dp"
+            android:layout_width="392dp"
             android:layout_height="168dp"
             android:id="@+id/questionContainer"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintTop_toBottomOf="@+id/questionNumber"
             android:layout_marginTop="16dp">
 
@@ -30,7 +30,6 @@
                 android:orientation="vertical">
 
             <TextView
-                    android:text="TextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/question"/>
@@ -43,7 +42,6 @@
     </ScrollView>
 
     <TextView
-            android:text="TextView"
             android:layout_width="80dp"
             android:layout_height="32dp"
             android:id="@+id/questionNumber"
@@ -54,7 +52,7 @@
             app:layout_constraintHorizontal_bias="0.491"/>
 
     <TextView
-            android:text="TextView"
+            android:text="Score: 0"
             android:layout_width="120dp"
             android:layout_height="32dp"
             android:id="@+id/score"
@@ -108,7 +106,6 @@
             android:layout_marginTop="8dp"/>
 
     <Button
-            android:text="Button"
             android:layout_width="320dp"
             android:layout_height="90dp"
             android:id="@+id/submit"
