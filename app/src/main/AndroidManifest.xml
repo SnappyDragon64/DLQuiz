@@ -20,11 +20,13 @@
         </activity>
         <activity
                 android:name=".activity.QuizActivity"
-                android:exported="true">
+                android:exported="true"
+                android:noHistory="true">
         </activity>
         <activity
                 android:name=".activity.ScorecardActivity"
-                android:exported="true">
+                android:exported="true"
+                android:noHistory="true">
         </activity>
     </application>
 

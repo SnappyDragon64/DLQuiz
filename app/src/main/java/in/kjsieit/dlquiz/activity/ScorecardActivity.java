@@ -24,9 +24,4 @@ public class ScorecardActivity extends AppCompatActivity {
 
         ((TextView) findViewById(R.id.scoredisplay)).setText(String.format(Locale.getDefault(), "Score: %d", score));
     }
-
-    @Override
-    public void onBackPressed() {
-        startActivity(new Intent(ScorecardActivity.this, MainActivity.class));
-    }
 }
