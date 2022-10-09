@@ -50,12 +50,12 @@
         "answer": 3
     },
     {
-        "question": "Which of the following options comes under the non \u2013 saturated logic family in Digital Electronics?",
+        "question": "Which of the following options comes under the non – saturated logic family in Digital Electronics?",
         "options": [
-            "Emitter \u2013 coupled Logic",
+            "Emitter – coupled Logic",
             "High-Threshold Logic",
-            "Integrated \u2013 injection Logic",
-            "Diode \u2013 Transistor Logic"
+            "Integrated – injection Logic",
+            "Diode – Transistor Logic"
         ],
         "answer": 0
     },
@@ -72,8 +72,8 @@
     {
         "question": "Which characteristic of IC in Digital Circuits represents a function of the switching time of a particular transistor?",
         "options": [
-            "Fan \u2013 out",
-            "Fan \u2013 in",
+            "Fan – out",
+            "Fan – in",
             "Power dissipation",
             "Propagation delay"
         ],
@@ -90,11 +90,11 @@
         "answer": 3
     },
     {
-        "question": "Which of the following digital logic circuits can be used to add more than 1 \u2013 bit simultaneously?",
+        "question": "Which of the following digital logic circuits can be used to add more than 1 – bit simultaneously?",
         "options": [
-            "Full \u2013 adder",
-            "Ripple \u2013 carry adder",
-            "Half \u2013 adder",
+            "Full – adder",
+            "Ripple – carry adder",
+            "Half – adder",
             "Serial adder"
         ],
         "answer": 1
@@ -120,7 +120,7 @@
         "answer": 0
     },
     {
-        "question": "Which of the following options represent the synchronous control inputs in an S \u2013 R flip flop?",
+        "question": "Which of the following options represent the synchronous control inputs in an S – R flip flop?",
         "options": [
             "S",
             "R",
@@ -142,15 +142,15 @@
     {
         "question": "Which of the following majorly determines the number of emitters in a TTL digital circuit?",
         "options": [
-            "Fan \u2013 in",
-            "Fan \u2013 out",
+            "Fan – in",
+            "Fan – out",
             "Propagation delay",
             "Noise immunity"
         ],
         "answer": 0
     },
     {
-        "question": "What will be the output from a D flip \u2013 flop if the clock is low and D  = 0?",
+        "question": "What will be the output from a D flip – flop if the clock is low and D  = 0?",
         "options": [
             "0",
             "1",
@@ -180,7 +180,7 @@
         "answer": 2
     },
     {
-        "question": "What is the minimum distance required for single error detection according to Hamming\u2019s analysis in Digital Electronics?",
+        "question": "What is the minimum distance required for single error detection according to Hamming’s analysis in Digital Electronics?",
         "options": [
             "1",
             "2",
@@ -220,17 +220,17 @@
         "answer": 0
     },
     {
-        "question": "What input should be given to \u201cS\u201d when SR flip \u2013 flop is converted to JK flip \u2013 flop?",
+        "question": "What input should be given to “S when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.<span style=\"text-decoration:overline\">Q</span>",
+            "K.Q̅",
             "K.Q",
             "J.Q",
-            "J.<span style=\"text-decoration:overline\">Q</span>"
+            "J.Q̅"
         ],
         "answer": 3
     },
     {
-        "question": "What value is to be considered for a \u201cdon\u2019t care condition\u201d?",
+        "question": "What value is to be considered for a “don’t care condition”?",
         "options": [
             "0",
             "1",
@@ -240,7 +240,7 @@
         "answer": 2
     },
     {
-        "question": "What is the group of 1s in 4 cells of a K \u2013 map called?",
+        "question": "What is the group of 1s in 4 cells of a K – map called?",
         "options": [
             "Pair",
             "Quad",
@@ -250,7 +250,7 @@
         "answer": 1
     },
     {
-        "question": "What will be the frequency of the output from a JK flip \u2013 flop, when J = 1, K = 1, and a clock with pulse waveform is given?",
+        "question": "What will be the frequency of the output from a JK flip – flop, when J = 1, K = 1, and a clock with pulse waveform is given?",
         "options": [
             "Half the frequency of clock input",
             "Equal to the frequency of clock input",
@@ -260,7 +260,7 @@
         "answer": 0
     },
     {
-        "question": "What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip \u2013 flop to a negative level triggered flip \u2013 flop?",
+        "question": "What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip – flop to a negative level triggered flip – flop?",
         "options": [
             "NOR gate",
             "NOT gate",
@@ -280,7 +280,7 @@
         "answer": 0
     },
     {
-        "question": "What will a TTL digital circuit possess due to the presence of a multi \u2013 emitter transistor?",
+        "question": "What will a TTL digital circuit possess due to the presence of a multi – emitter transistor?",
         "options": [
             "Smaller resistance",
             "Larger area",
@@ -310,17 +310,17 @@
         "answer": 0
     },
     {
-        "question": "What must be the input given to \u201cR\u201d when SR flip \u2013 flop is converted to JK flip \u2013 flop?",
+        "question": "What must be the input given to “R” when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.<span style=\"text-decoration:overline\">Q</span>",
+            "K.Q̅",
             "K.Q",
             "J.Q",
-            "J.<span style=\"text-decoration:overline\">Q</span>"
+            "J.Q̅"
         ],
         "answer": 1
     },
     {
-        "question": "What minimum distance is required for a single error correction according to Hamming\u2019s analysis in Digital Electronics?",
+        "question": "What minimum distance is required for a single error correction according to Hamming’s analysis in Digital Electronics?",
         "options": [
             "1",
             "2",
@@ -340,7 +340,7 @@
         "answer": 0
     },
     {
-        "question": "What is the group of 1s present in 8 cells of a K \u2013 map called?",
+        "question": "What is the group of 1s present in 8 cells of a K – map called?",
         "options": [
             "Pair",
             "Quad",
@@ -350,27 +350,27 @@
         "answer": 2
     },
     {
-        "question": "Which of these flip \u2013 flops cannot be used to construct a serial shift register?",
+        "question": "Which of these flip – flops cannot be used to construct a serial shift register?",
         "options": [
-            "D \u2013 flip flop",
-            "SR flip \u2013 flop",
-            "T flip \u2013 flop",
-            "JK flip \u2013 flop"
+            "D – flip flop",
+            "SR flip – flop",
+            "T flip – flop",
+            "JK flip – flop"
         ],
         "answer": 2
     },
     {
-        "question": "Which of these options represent the other name of Inter \u2013 Integrated logic?",
+        "question": "Which of these options represent the other name of Inter – Integrated logic?",
         "options": [
             "Merged Transistor Logic",
-            "Emitter \u2013 Coupled Logic",
+            "Emitter – Coupled Logic",
             "High threshold logic",
-            "Resistor \u2013  Transistor logic"
+            "Resistor –  Transistor logic"
         ],
         "answer": 0
     },
     {
-        "question": "Which of the following options is a Current \u2013 Mode logic used in Digital Circuits?",
+        "question": "Which of the following options is a Current – Mode logic used in Digital Circuits?",
         "options": [
             "TTL",
             "RTL",
@@ -380,27 +380,17 @@
         "answer": 2
     },
     {
-        "question": "How many AND gates are required to construct a 4 \u2013 bit parallel multiplier if four 4 \u2013 bit parallel binary adders are given?",
+        "question": "How many AND gates are required to construct a 4 – bit parallel multiplier if four 4 – bit parallel binary adders are given?",
         "options": [
-            "Four 2 \u2013 input AND gates",
-            "Eight 2 \u2013 input AND gates",
-            "Sixteen 2 \u2013 input AND gates",
-            "Two 2 \u2013 input AND gates"
+            "Four 2 – input AND gates",
+            "Eight 2 – input AND gates",
+            "Sixteen 2 – input AND gates",
+            "Two 2 – input AND gates"
         ],
         "answer": 2
     },
     {
-        "question": "How many cycles of addition and shifting in a 4 \u2013 bit multiplier are required to perform multiplication using the shift method?",
-        "options": [
-            "1",
-            "2",
-            "4",
-            "8"
-        ],
-        "answer": 2
-    },
-    {
-        "question": "How many 4 \u2013 bit parallel binary adders will be required to construct a 4 \u2013 bit parallel multiplier?",
+        "question": "How many cycles of addition and shifting in a 4 – bit multiplier are required to perform multiplication using the shift method?",
         "options": [
             "1",
             "2",
@@ -410,7 +400,17 @@
         "answer": 2
     },
     {
-        "question": "What kind of operation occurs in a J \u2013 K flip flop when both inputs J and K are equal to 1?",
+        "question": "How many 4 – bit parallel binary adders will be required to construct a 4 – bit parallel multiplier?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What kind of operation occurs in a J – K flip flop when both inputs J and K are equal to 1?",
         "options": [
             "Preset operation",
             "Reset operation",
@@ -440,7 +440,7 @@
         "answer": 0
     },
     {
-        "question": "Which of the following options correctly represent the characteristic of Excess \u2013 3 code?",
+        "question": "Which of the following options correctly represent the characteristic of Excess – 3 code?",
         "options": [
             "It is a reflexive as well as a sequential code",
             "It is a reflexive code but not a sequential code",
@@ -450,7 +450,7 @@
         "answer": 0
     },
     {
-        "question": "The result \u201cX + XY  =  X\u201d follows which of these laws?",
+        "question": "The result “X + XY  =  X” follows which of these laws?",
         "options": [
             "Consensus law",
             "Distributive law",
@@ -462,25 +462,25 @@
     {
         "question": "Which of the following options correctly represents the consensus law of Digital Circuits?",
         "options": [
-            "AB + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">A</span>C",
-            "<span style=\"text-decoration:overline\">A</span>B + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">A</span>C",
-            "AB + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">AC</span>",
-            "<span style=\"text-decoration:overline\">A</span>B + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">AC</span>"
+            "AB + A̅C + BC = AB +  A̅C",
+            "A̅B + A̅C + BC = AB +  A̅C",
+            "AB + A̅C + BC = AB +  AC̅",
+            "A̅B + A̅C + BC = AB +  AC̅"
         ],
         "answer": 0
     },
     {
-        "question": "Which of the following points is not correct regarding an Ex \u2013 NOR gate in Digital Electronics?",
+        "question": "Which of the following points is not correct regarding an Ex – NOR gate in Digital Electronics?",
         "options": [
-            "It is a one \u2013 bit comparator",
+            "It is a one – bit comparator",
             "It is a buffer",
-            "It is a one \u2013 bit inverter",
+            "It is a one – bit inverter",
             "It is a universal gate"
         ],
         "answer": 0
     },
     {
-        "question": "Which gate is called the anti \u2013 coincidence and coincidence gate respectively?",
+        "question": "Which gate is called the anti – coincidence and coincidence gate respectively?",
         "options": [
             "XNOR and XOR",
             "AND and OR",
@@ -490,7 +490,7 @@
         "answer": 3
     },
     {
-        "question": "What frequency division of the pulsed clock signal can be obtained by connecting 4 flip \u2013 flops in cascade?",
+        "question": "What frequency division of the pulsed clock signal can be obtained by connecting 4 flip – flops in cascade?",
         "options": [
             "2",
             "4",
@@ -500,17 +500,17 @@
         "answer": 3
     },
     {
-        "question": "Which of the following options represent the correct reduction of X<span style=\"text-decoration:overline\">Y</span>Z + <span style=\"text-decoration:overline\">XY</span>Z ?",
+        "question": "Which of the following options represent the correct reduction of XY̅Z + XY̅Z ?",
         "options": [
             "0",
-            "<span style=\"text-decoration:overline\">Y</span>Z",
-            "X  + <span style=\"text-decoration:overline\">X</span>",
-            "2<span style=\"text-decoration:overline\">Y</span>Z"
+            "Y̅Z",
+            "X  + X̅",
+            "2Y̅Z"
         ],
         "answer": 1
     },
     {
-        "question": "A priority encoder has four inputs I<sub>0</sub>, I<sub>1</sub>, I<sub>2</sub>, and I<sub>3</sub> where I<sub>3</sub> has the highest priority and I<sub>0</sub> has the least priority. If I<sub>2</sub>  =  1, what will be the output?",
+        "question": "A priority encoder has four inputs I₀, I₁, I₂, and I₃ where I₃ has the highest priority and I₀ has the least priority. If I₂  =  1, what will be the output?",
         "options": [
             "00",
             "01",
@@ -520,12 +520,12 @@
         "answer": 2
     },
     {
-        "question": "Which of the following options are correct for a 4\u00d71 multiplexer?",
+        "question": "Which of the following options are correct for a 4 – 1 multiplexer?",
         "options": [
-            "It has four 3 \u2013 input AND gates",
-            "It has four 2 \u2013 input AND gates",
-            "It has one 3 \u2013 input AND gate",
-            "It has one 3 \u2013 input AND gate"
+            "It has four 3 – input AND gates",
+            "It has four 2 – input AND gates",
+            "It has one 3 – input AND gate",
+            "It has one 3 – input AND gate"
         ],
         "answer": 0
     },
