@@ -70,10 +70,6 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void init() {
-        if (ResourcesHelper.resources == null) {
-            ResourcesHelper.resources = getResources();
-        }
-
         random = new Random();
 
         difficultyQuestionSetMap = Maps.newEnumMap(Difficulty.class);
