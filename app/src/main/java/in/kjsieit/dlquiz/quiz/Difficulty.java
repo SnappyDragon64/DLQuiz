@@ -2,8 +2,8 @@ package in.kjsieit.dlquiz.quiz;
 
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.ImmutableList;
 import in.kjsieit.dlquiz.R;
-import in.kjsieit.dlquiz.quiz.json.Question;
-import in.kjsieit.dlquiz.quiz.json.QuestionSetParser;
+import in.kjsieit.dlquiz.quiz.question.Question;
+import in.kjsieit.dlquiz.quiz.question.QuestionSetParser;
 
 public enum Difficulty {
     EASY(R.raw.easy), MEDIUM(R.raw.medium), HARD(R.raw.hard);

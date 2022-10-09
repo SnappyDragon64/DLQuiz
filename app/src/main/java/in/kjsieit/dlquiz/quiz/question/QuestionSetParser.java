@@ -1,9 +1,7 @@
-package in.kjsieit.dlquiz.quiz.json;
+package in.kjsieit.dlquiz.quiz.question;
 
 import android.util.JsonReader;
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.ImmutableList;
-import in.kjsieit.dlquiz.R;
-import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.io.IOException;

@@ -12,7 +12,7 @@ import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collec
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
-import in.kjsieit.dlquiz.quiz.json.Question;
+import in.kjsieit.dlquiz.quiz.question.Question;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.util.*;
@@ -130,6 +130,13 @@ public class QuizActivity extends AppCompatActivity {
                     if (current.getAnswer() == selectedId) {
                         streakCtr++;
                         score.setText(String.format(Locale.getDefault(), "Score: %d", ++scoreCtr));
+
+                        if (difficulty == Difficulty.EASY)
+                            easyCtr++;
+                        else if (difficulty == Difficulty.MEDIUM)
+                            mediumCtr++;
+                        else
+                            hardCtr++;
                     } else {
                         streakCtr = -1;
                         options[selectedId].setBackgroundColor(getResources().getColor(R.color.red));
@@ -148,6 +155,10 @@ public class QuizActivity extends AppCompatActivity {
                         Intent intent = new Intent(QuizActivity.this, ScorecardActivity.class);
                         Bundle dat = new Bundle();
                         dat.putInt("score", scoreCtr);
+                        dat.putInt("time", seconds);
+                        dat.putInt("easy", easyCtr);
+                        dat.putInt("medium", mediumCtr);
+                        dat.putInt("hard", hardCtr);
                         intent.putExtras(dat);
                         startActivity(intent);
                     }

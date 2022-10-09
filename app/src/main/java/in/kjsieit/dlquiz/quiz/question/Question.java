@@ -1,4 +1,4 @@
-package in.kjsieit.dlquiz.quiz.json;
+package in.kjsieit.dlquiz.quiz.question;
 
 import java.util.List;
 
