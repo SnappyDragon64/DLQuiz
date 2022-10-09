@@ -1,36 +1,27 @@
 package in.kjsieit.dlquiz.activity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.Maps;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
 import in.kjsieit.dlquiz.quiz.json.Question;
-import in.kjsieit.dlquiz.quiz.json.QuestionSetParser;
+import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.util.*;
 
 public class QuizActivity extends AppCompatActivity {
     private Random random;
 
-    private List<Question> EASY_QUESTION_SET;
-    private List<Question> MEDIUM_QUESTION_SET;
-    private List<Question> HARD_QUESTION_SET;
+    private Map<Difficulty, List<Question>> difficultyQuestionSetMap;
 
-    private List<Question> easyQuestionSet;
-    private List<Question> mediumQuestionSet;
-    private List<Question> hardQuestionSet;
-
-    private List<Question> currentSet;
     private Question current;
     private Difficulty difficulty;
     private Phase phase;
@@ -39,6 +30,9 @@ public class QuizActivity extends AppCompatActivity {
     private int streakCtr;
     private int qCtr;
     private int scoreCtr;
+    private int easyCtr;
+    private int mediumCtr;
+    private int hardCtr;
 
     Button submit;
     Button optionA;
@@ -57,7 +51,6 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setFullscreen();
         setContentView(R.layout.activity_quiz);
         init();
         setupButtons();
@@ -76,31 +69,25 @@ public class QuizActivity extends AppCompatActivity {
         alert.show();
     }
 
-    private void setFullscreen() {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
-
     private void init() {
+        if (ResourcesHelper.resources == null) {
+            ResourcesHelper.resources = getResources();
+        }
+
         random = new Random();
 
-        EASY_QUESTION_SET = QuestionSetParser.parse(getResources().openRawResource(R.raw.easy));
-        MEDIUM_QUESTION_SET = QuestionSetParser.parse(getResources().openRawResource(R.raw.medium));
-        HARD_QUESTION_SET = QuestionSetParser.parse(getResources().openRawResource(R.raw.hard));
+        difficultyQuestionSetMap = Maps.newEnumMap(Difficulty.class);
 
-        easyQuestionSet = new ArrayList<>(EASY_QUESTION_SET);
-        mediumQuestionSet = new ArrayList<>(MEDIUM_QUESTION_SET);
-        hardQuestionSet = new ArrayList<>(HARD_QUESTION_SET);
-
-        currentSet = Collections.emptyList();
         difficulty = Difficulty.EASY;
         phase = Phase.ANSWER;
-        int selectedId = -1;
-        int seconds = 0;
-        int streakCtr = 0;
-        int qCtr = 0;
-        int scoreCtr = 0;
+        selectedId = -1;
+        seconds = 0;
+        streakCtr = 0;
+        qCtr = 0;
+        scoreCtr = 0;
+        easyCtr = 0;
+        mediumCtr = 0;
+        hardCtr = 0;
 
         submit = findViewById(R.id.submit);
         optionA = findViewById(R.id.optionA);
@@ -113,7 +100,6 @@ public class QuizActivity extends AppCompatActivity {
         questionNumber = findViewById(R.id.questionNumber);
         score = findViewById(R.id.score);
         question = findViewById(R.id.question);
-        currentSet = easyQuestionSet;
 
         image = findViewById(R.id.image);
     }
@@ -206,17 +192,18 @@ public class QuizActivity extends AppCompatActivity {
         });
     }
 
+    public List<Question> getCurrentSet() {
+        this.difficultyQuestionSetMap.putIfAbsent(this.difficulty, new ArrayList<>());
+        return this.difficultyQuestionSetMap.get(this.difficulty);
+    }
+
     private void loadQuestion() {
         qCtr++;
         balance();
+        loadSet();
 
-        if (currentSet.isEmpty()) {
-            refillSet(difficulty);
-            currentSet = getSet(difficulty);
-        }
-
-        current = currentSet.get(random.nextInt(currentSet.size()));
-        currentSet.remove(current);
+        current = getCurrentSet().get(random.nextInt(getCurrentSet().size()));
+        getCurrentSet().remove(current);
 
         question.setText(current.getQuestion());
         questionNumber.setText(String.format(Locale.getDefault(), "%d/20", qCtr));
@@ -227,58 +214,19 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void balance() {
-        if (streakCtr == 4 && difficulty != Difficulty.HARD) {
+        if (streakCtr == 4) {
             streakCtr = 0;
-
-            switch (difficulty) {
-                case EASY:
-                    difficulty = Difficulty.MEDIUM;
-                    break;
-                case MEDIUM:
-                    difficulty = Difficulty.HARD;
-                    break;
-            }
+            difficulty = difficulty.increase();
         }
         else if (streakCtr == -1) {
             streakCtr = 0;
-
-            switch (difficulty) {
-                case HARD:
-                    difficulty = Difficulty.MEDIUM;
-                    break;
-                case MEDIUM:
-                    difficulty = Difficulty.EASY;
-                    break;
-            }
-        }
-
-        currentSet = getSet(difficulty);
-    }
-
-    private List<Question> getSet(Difficulty difficulty) {
-        switch (difficulty) {
-            case EASY:
-                return easyQuestionSet;
-            case MEDIUM:
-                return mediumQuestionSet;
-            case HARD:
-                return hardQuestionSet;
-            default:
-                return null;
+            difficulty = difficulty.decrease();
         }
     }
 
-    private void refillSet(Difficulty difficulty) {
-        switch (difficulty) {
-            case EASY:
-                easyQuestionSet = new ArrayList<>(EASY_QUESTION_SET);
-                break;
-            case MEDIUM:
-                mediumQuestionSet = new ArrayList<>(MEDIUM_QUESTION_SET);
-                break;
-            case HARD:
-                hardQuestionSet = new ArrayList<>(HARD_QUESTION_SET);
-                break;
+    private void loadSet() {
+        if (getCurrentSet().isEmpty()) {
+            this.getCurrentSet().addAll(this.difficulty.getQuestionSet());
         }
     }
 }

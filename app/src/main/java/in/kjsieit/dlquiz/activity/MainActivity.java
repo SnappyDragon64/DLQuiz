@@ -7,7 +7,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import in.kjsieit.dlquiz.R;
+import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 public class MainActivity extends AppCompatActivity {
     Button startButton;
@@ -15,19 +18,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setFullscreen();
         setContentView(R.layout.activity_main);
         init();
         setupButtons();
     }
 
-    private void setFullscreen() {
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
-
     private void init() {
+        if (ResourcesHelper.resources == null) {
+            ResourcesHelper.resources = getResources();
+        }
+
         startButton = findViewById(R.id.startButton);
     }
 

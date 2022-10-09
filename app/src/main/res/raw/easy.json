@@ -1,12 +1,552 @@
 [
-  {
-    "question": "EASY Q TEST",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0
-  }
+    {
+        "question": "What is Digital Electronics?",
+        "options": [
+            "Field of electronics involving the study of digital signal",
+            "Engineering of devices that digital signal",
+            "Engineering of devices that produce digital signal",
+            "All pf the mentioned"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following is correct for Digital Circuits?",
+        "options": [
+            "Less susceptible to noise or degradation in quality",
+            "Use transistors to create logic gates to perform Boolean logic",
+            "Easier to perform error detection and correction with digital signal",
+            "All of the mentioned"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What is a Circuit?",
+        "options": [
+            "Open-loop through which electrons can pass",
+            "Closed-loop through which electrons can pass",
+            "Closed-loop through which Neutrons can pass",
+            "None of the mentioned"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following is an example of a digital Electronic?",
+        "options": [
+            "Computers",
+            "Information appliances",
+            "Digital cameras",
+            "All of the mentioned"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following is a type of digital logic circuit?",
+        "options": [
+            "Combinational logic circuits",
+            "Sequential logic circuits",
+            "Both a &amp; b",
+            "None of the mentioned"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following options comes under the non \u2013 saturated logic family in Digital Electronics?",
+        "options": [
+            "Emitter \u2013 coupled Logic",
+            "High-Threshold Logic",
+            "Integrated \u2013 injection Logic",
+            "Diode \u2013 Transistor Logic"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is a switching function that has more than one output called in Digital Electronics?",
+        "options": [
+            "Multi-gate function",
+            "Multi-output function",
+            "Multiple-gate function",
+            "Multiple-output function"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which characteristic of IC in Digital Circuits represents a function of the switching time of a particular transistor?",
+        "options": [
+            "Fan \u2013 out",
+            "Fan \u2013 in",
+            "Power dissipation",
+            "Propagation delay"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "When can one logic gate drive many other logic gates in Digital Electronics?",
+        "options": [
+            "When its output impedance is low and the input impedance is low",
+            "When its output impedance is high and the input impedance is high",
+            "When its output impedance is high and the input impedance is low",
+            "When its output impedance is low and the input impedance is high"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following digital logic circuits can be used to add more than 1 \u2013 bit simultaneously?",
+        "options": [
+            "Full \u2013 adder",
+            "Ripple \u2013 carry adder",
+            "Half \u2013 adder",
+            "Serial adder"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which gates in Digital Circuits are required to convert a NOR-based SR latch to an SR flip-flop?",
+        "options": [
+            "Two 2 input AND gates",
+            "Two 3 input AND gates",
+            "Two 2 input OR gates",
+            "Two 3 input OR gates"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "When does a negative level triggered flip-flop in Digital Electronics changes its state?",
+        "options": [
+            "When the clock is negative",
+            "When the clock is positive",
+            "When the inputs are all zero",
+            "When the inputs are all one"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options represent the synchronous control inputs in an S \u2013 R flip flop?",
+        "options": [
+            "S",
+            "R",
+            "Clock",
+            "Both S and R"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What must be used along with synchronous control inputs to trigger a change in the flip flop?",
+        "options": [
+            "0",
+            "1",
+            "Clock",
+            "Previous output"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following majorly determines the number of emitters in a TTL digital circuit?",
+        "options": [
+            "Fan \u2013 in",
+            "Fan \u2013 out",
+            "Propagation delay",
+            "Noise immunity"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What will be the output from a D flip \u2013 flop if the clock is low and D  = 0?",
+        "options": [
+            "0",
+            "1",
+            "No change",
+            "Toggle between 0 and 1"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What are the basic gates in MOS logic family?",
+        "options": [
+            "NAND and NOR",
+            "AND and OR",
+            "NAND and OR",
+            "AND and NOR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How must the output of a gate in a TTL digital circuit act when it is HIGH?",
+        "options": [
+            "Acts as a voltage source",
+            "Acts as a current sink",
+            "Acts as a current source",
+            "Acts as a voltage sink"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the minimum distance required for single error detection according to Hamming\u2019s analysis in Digital Electronics?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of these error-detecting codes enables to find double errors in Digital Electronic devices?",
+        "options": [
+            "Parity method",
+            "Check sum method",
+            "Bit generation method",
+            "Odd-Even method"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What will be the output from a D flip-flop if D  = 1 and the clock is low?",
+        "options": [
+            "No change",
+            "Toggle between 0 and 1",
+            "0",
+            "1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What characteristic will a TTL digital circuit possess due to its multi-emitter transistor?",
+        "options": [
+            "Low capacitance",
+            "High capacitance",
+            "Low inductance",
+            "High inductance"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What input should be given to \u201cS\u201d when SR flip \u2013 flop is converted to JK flip \u2013 flop?",
+        "options": [
+            "K.<span style=\"text-decoration:overline\">Q</span>",
+            "K.Q",
+            "J.Q",
+            "J.<span style=\"text-decoration:overline\">Q</span>"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What value is to be considered for a \u201cdon\u2019t care condition\u201d?",
+        "options": [
+            "0",
+            "1",
+            "Either 0 or 1",
+            "Any number except 0 and 1"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the group of 1s in 4 cells of a K \u2013 map called?",
+        "options": [
+            "Pair",
+            "Quad",
+            "Octet",
+            "Octave"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What will be the frequency of the output from a JK flip \u2013 flop, when J = 1, K = 1, and a clock with pulse waveform is given?",
+        "options": [
+            "Half the frequency of clock input",
+            "Equal to the frequency of clock input",
+            "Twice the frequency of clock input",
+            "Independent of the frequency of clock input"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip \u2013 flop to a negative level triggered flip \u2013 flop?",
+        "options": [
+            "NOR gate",
+            "NOT gate",
+            "Buffer",
+            "NAND gate"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In Digital Circuits, which of the following options represent the synchronous control inputs in a T flip flop?",
+        "options": [
+            "T",
+            "0",
+            "Clock",
+            "1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What will a TTL digital circuit possess due to the presence of a multi \u2013 emitter transistor?",
+        "options": [
+            "Smaller resistance",
+            "Larger area",
+            "Smaller area",
+            "Larger resistance"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How must the output of a gate act when it is LOW in a TTL circuit?",
+        "options": [
+            "Acts as a voltage source",
+            "Acts as a current sink",
+            "Acts as a current source",
+            "Acts as a voltage sink"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following gives the correct number of multiplexers required to build a 32 x 1 multiplexer?",
+        "options": [
+            "Two 16 x 1 mux",
+            "Three 8 x 1 mux",
+            "Two 8 x 1 mux",
+            "Three 16 x 1 mux"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What must be the input given to \u201cR\u201d when SR flip \u2013 flop is converted to JK flip \u2013 flop?",
+        "options": [
+            "K.<span style=\"text-decoration:overline\">Q</span>",
+            "K.Q",
+            "J.Q",
+            "J.<span style=\"text-decoration:overline\">Q</span>"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What minimum distance is required for a single error correction according to Hamming\u2019s analysis in Digital Electronics?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many errors can the Digital Electronics parity method can find in a single word?",
+        "options": [
+            "Single error",
+            "Double error",
+            "Triple error",
+            "Multiple errors"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the group of 1s present in 8 cells of a K \u2013 map called?",
+        "options": [
+            "Pair",
+            "Quad",
+            "Octet",
+            "Octave"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of these flip \u2013 flops cannot be used to construct a serial shift register?",
+        "options": [
+            "D \u2013 flip flop",
+            "SR flip \u2013 flop",
+            "T flip \u2013 flop",
+            "JK flip \u2013 flop"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of these options represent the other name of Inter \u2013 Integrated logic?",
+        "options": [
+            "Merged Transistor Logic",
+            "Emitter \u2013 Coupled Logic",
+            "High threshold logic",
+            "Resistor \u2013  Transistor logic"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options is a Current \u2013 Mode logic used in Digital Circuits?",
+        "options": [
+            "TTL",
+            "RTL",
+            "ECL",
+            "IIC"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many AND gates are required to construct a 4 \u2013 bit parallel multiplier if four 4 \u2013 bit parallel binary adders are given?",
+        "options": [
+            "Four 2 \u2013 input AND gates",
+            "Eight 2 \u2013 input AND gates",
+            "Sixteen 2 \u2013 input AND gates",
+            "Two 2 \u2013 input AND gates"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many cycles of addition and shifting in a 4 \u2013 bit multiplier are required to perform multiplication using the shift method?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many 4 \u2013 bit parallel binary adders will be required to construct a 4 \u2013 bit parallel multiplier?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What kind of operation occurs in a J \u2013 K flip flop when both inputs J and K are equal to 1?",
+        "options": [
+            "Preset operation",
+            "Reset operation",
+            "Clear operation",
+            "Toggle operation"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following codes is a sequential code?",
+        "options": [
+            "8421 code",
+            "2421 code",
+            "5421 code",
+            "2441 code"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of these code pairs correctly represent Digital Electronics reflective codes?",
+        "options": [
+            "2421 and 5211",
+            "2421 and 8421",
+            "5211 and 8421",
+            "5421 and 2421"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options correctly represent the characteristic of Excess \u2013 3 code?",
+        "options": [
+            "It is a reflexive as well as a sequential code",
+            "It is a reflexive code but not a sequential code",
+            "It is a sequential code but not a reflexive code",
+            "It is neither a reflexive code nor a sequential code"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The result \u201cX + XY  =  X\u201d follows which of these laws?",
+        "options": [
+            "Consensus law",
+            "Distributive law",
+            "Duality law",
+            "Absorption law"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following options correctly represents the consensus law of Digital Circuits?",
+        "options": [
+            "AB + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">A</span>C",
+            "<span style=\"text-decoration:overline\">A</span>B + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">A</span>C",
+            "AB + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">AC</span>",
+            "<span style=\"text-decoration:overline\">A</span>B + <span style=\"text-decoration:overline\">A</span>C + BC = AB +  <span style=\"text-decoration:overline\">AC</span>"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following points is not correct regarding an Ex \u2013 NOR gate in Digital Electronics?",
+        "options": [
+            "It is a one \u2013 bit comparator",
+            "It is a buffer",
+            "It is a one \u2013 bit inverter",
+            "It is a universal gate"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which gate is called the anti \u2013 coincidence and coincidence gate respectively?",
+        "options": [
+            "XNOR and XOR",
+            "AND and OR",
+            "OR and AND",
+            "XOR and XNOR"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What frequency division of the pulsed clock signal can be obtained by connecting 4 flip \u2013 flops in cascade?",
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following options represent the correct reduction of X<span style=\"text-decoration:overline\">Y</span>Z + <span style=\"text-decoration:overline\">XY</span>Z ?",
+        "options": [
+            "0",
+            "<span style=\"text-decoration:overline\">Y</span>Z",
+            "X  + <span style=\"text-decoration:overline\">X</span>",
+            "2<span style=\"text-decoration:overline\">Y</span>Z"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "A priority encoder has four inputs I<sub>0</sub>, I<sub>1</sub>, I<sub>2</sub>, and I<sub>3</sub> where I<sub>3</sub> has the highest priority and I<sub>0</sub> has the least priority. If I<sub>2</sub>  =  1, what will be the output?",
+        "options": [
+            "00",
+            "01",
+            "10",
+            "11"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following options are correct for a 4\u00d71 multiplexer?",
+        "options": [
+            "It has four 3 \u2013 input AND gates",
+            "It has four 2 \u2013 input AND gates",
+            "It has one 3 \u2013 input AND gate",
+            "It has one 3 \u2013 input AND gate"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What determines the output from the combinational logic circuit in Digital Electronics?",
+        "options": [
+            "Input signals from the past condition",
+            "Input signals at the present moment",
+            "Input signals from both past and present",
+            "Input signals expected in future"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of these pins will allow to activate and deactivate a multiplexer?",
+        "options": [
+            "Enable pin",
+            "Selection pin",
+            "Logic pin",
+            "Preset pin"
+        ],
+        "answer": 0
+    }
 ]

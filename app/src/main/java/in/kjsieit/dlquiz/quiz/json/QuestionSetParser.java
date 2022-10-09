@@ -1,16 +1,23 @@
 package in.kjsieit.dlquiz.quiz.json;
 
 import android.util.JsonReader;
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.ImmutableList;
+import in.kjsieit.dlquiz.R;
+import in.kjsieit.dlquiz.quiz.Difficulty;
+import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class QuestionSetParser {
-    public static List<Question> parse(InputStream raw) {
+    public static ImmutableList<Question> parseSet(int id) {
+        return ImmutableList.<Question>builder().addAll(parse(ResourcesHelper.resources.openRawResource(id))).build();
+    }
+
+    private static List<Question> parse(InputStream raw) {
         try (JsonReader reader = new JsonReader(new InputStreamReader(raw, StandardCharsets.UTF_8))) {
             List<Question> questions = new ArrayList<>();
 
@@ -23,11 +30,11 @@ public class QuestionSetParser {
             return questions;
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+            return Collections.emptyList();
         }
     }
 
-    public static Question readQuestion(JsonReader reader) throws IOException {
+    private static Question readQuestion(JsonReader reader) throws IOException {
         String question = null;
         List<String> options = null;
         int answer = -1;
