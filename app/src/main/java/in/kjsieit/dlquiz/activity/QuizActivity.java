@@ -58,7 +58,6 @@ public class QuizActivity extends AppCompatActivity {
     private void setupButtons() {
         int i = 0;
         Button submit = findViewById(R.id.submit);
-        submit.setEnabled(false);
 
         Button optionA = findViewById(R.id.optionA);
         Button optionB = findViewById(R.id.optionB);
