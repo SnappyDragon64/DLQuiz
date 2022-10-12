@@ -14,13 +14,15 @@ import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 public class MainActivity extends AppCompatActivity {
-    Button startButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
+
+        if (ResourcesHelper.resources == null) {
+            ResourcesHelper.resources = getResources();
+        }
+
         setupButtons();
     }
 
@@ -35,15 +37,8 @@ public class MainActivity extends AppCompatActivity {
         alert.show();
     }
 
-    private void init() {
-        if (ResourcesHelper.resources == null) {
-            ResourcesHelper.resources = getResources();
-        }
-
-        startButton = findViewById(R.id.startButton);
-    }
-
     private void setupButtons() {
+        Button startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, QuizActivity.class)));
     }
 }

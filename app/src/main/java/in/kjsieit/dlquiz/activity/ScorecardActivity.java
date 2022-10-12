@@ -43,6 +43,7 @@ public class ScorecardActivity extends AppCompatActivity {
 
         String qstr = String.format(Locale.getDefault(), "Easy: %d\nMedium: %d\nHard: %d", easy, medium, hard);
 
-        ((TextView) findViewById(R.id.scoredisplay)).setText(String.format("%s\n%s\n%s", scorestr, timestr, qstr));
+        TextView scoreView = findViewById(R.id.scoredisplay);
+        scoreView.setText(String.format("%s\n%s\n%s", scorestr, timestr, qstr));
     }
 }

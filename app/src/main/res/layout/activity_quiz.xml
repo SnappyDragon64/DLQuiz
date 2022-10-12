@@ -25,23 +25,12 @@
             app:layout_constraintTop_toBottomOf="@+id/questionNumber"
             android:layout_marginTop="16dp">
 
-        <LinearLayout
+        <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/question"
-                    android:gravity="center"/>
-
-            <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/image"
-                    android:gravity="center"/>
-        </LinearLayout>
+                android:id="@+id/question"
+                android:gravity="center"
+                />
     </ScrollView>
 
     <TextView
@@ -67,7 +56,6 @@
             android:layout_marginEnd="16dp"/>
 
     <Button
-            android:text="Button"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionA"
@@ -79,7 +67,6 @@
             app:backgroundTint="@color/purple_500"/>
 
     <Button
-            android:text="Button"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionB"
@@ -91,7 +78,6 @@
             app:backgroundTint="@color/purple_500"/>
 
     <Button
-            android:text="Button"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionC"
@@ -103,7 +89,6 @@
             app:backgroundTint="@color/purple_500"/>
 
     <Button
-            android:text="Button"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionD"

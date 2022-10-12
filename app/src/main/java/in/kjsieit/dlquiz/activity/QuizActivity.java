@@ -18,41 +18,26 @@ import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 import java.util.*;
 
 public class QuizActivity extends AppCompatActivity {
-    private Random random;
+    private Random random = new Random();
 
-    private Map<Difficulty, List<Question>> difficultyQuestionSetMap;
+    private final Map<Difficulty, List<Question>> difficultyQuestionSetMap = Maps.newEnumMap(Difficulty.class);
 
     private Question current;
-    private Difficulty difficulty;
-    private Phase phase;
-    private int selectedId;
-    private int seconds;
-    private int streakCtr;
-    private int qCtr;
-    private int scoreCtr;
-    private int easyCtr;
-    private int mediumCtr;
-    private int hardCtr;
-
-    Button submit;
-    Button optionA;
-    Button optionB;
-    Button optionC;
-    Button optionD;
-    Button[] options;
-
-    TextView timer;
-    TextView questionNumber;
-    TextView score;
-    TextView question;
-
-    ImageView image;
+    private Difficulty difficulty = Difficulty.EASY;
+    private Phase phase = Phase.ANSWER;
+    private int selectedId = -1;
+    private int seconds = 0;
+    private int streakCtr = 0;
+    private int qCtr = 0;
+    private int scoreCtr = 0;
+    private int easyCtr = 0;
+    private int mediumCtr = 0;
+    private int hardCtr = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        init();
         setupButtons();
         startTimer();
         loadQuestion();
@@ -69,42 +54,17 @@ public class QuizActivity extends AppCompatActivity {
         alert.show();
     }
 
-    private void init() {
-        random = new Random();
-
-        difficultyQuestionSetMap = Maps.newEnumMap(Difficulty.class);
-
-        difficulty = Difficulty.EASY;
-        phase = Phase.ANSWER;
-        selectedId = -1;
-        seconds = 0;
-        streakCtr = 0;
-        qCtr = 0;
-        scoreCtr = 0;
-        easyCtr = 0;
-        mediumCtr = 0;
-        hardCtr = 0;
-
-        submit = findViewById(R.id.submit);
-        optionA = findViewById(R.id.optionA);
-        optionB = findViewById(R.id.optionB);
-        optionC = findViewById(R.id.optionC);
-        optionD = findViewById(R.id.optionD);
-        options = new Button[]{optionA, optionB, optionC, optionD};
-
-        timer = findViewById(R.id.timer);
-        questionNumber = findViewById(R.id.questionNumber);
-        score = findViewById(R.id.score);
-        question = findViewById(R.id.question);
-
-        image = findViewById(R.id.image);
-    }
-
     private void setupButtons() {
         int i = 0;
+        Button submit = findViewById(R.id.submit);
         submit.setEnabled(false);
         submit.setText("Submit");
 
+        Button optionA = findViewById(R.id.optionA);
+        Button optionB = findViewById(R.id.optionB);
+        Button optionC = findViewById(R.id.optionC);
+        Button optionD = findViewById(R.id.optionD);
+        Button[] options = new Button[]{optionA, optionB, optionC, optionD};
         for (Button selectedButton : options) {
             int id = i;
             selectedButton.setOnClickListener(v -> {
@@ -125,7 +85,8 @@ public class QuizActivity extends AppCompatActivity {
                 case ANSWER:
                     if (current.getAnswer() == selectedId) {
                         streakCtr++;
-                        score.setText(String.format(Locale.getDefault(), "Score: %d", ++scoreCtr));
+                        TextView scoreView = findViewById(R.id.score);
+                        scoreView.setText(String.format(Locale.getDefault(), "Score: %d", ++scoreCtr));
 
                         if (difficulty == Difficulty.EASY)
                             easyCtr++;
@@ -191,7 +152,8 @@ public class QuizActivity extends AppCompatActivity {
                     time = String.format(Locale.getDefault(), "%d:%02d:%02d", h, m, s);
                 else
                     time = String.format(Locale.getDefault(), "%02d:%02d", m, s);
-                timer.setText(time);
+                TextView timerView = findViewById(R.id.timer);
+                timerView.setText(time);
 
                 seconds++;
                 handler.postDelayed(this, 1000);
@@ -212,9 +174,16 @@ public class QuizActivity extends AppCompatActivity {
         current = getCurrentSet().get(random.nextInt(getCurrentSet().size()));
         getCurrentSet().remove(current);
 
-        question.setText(current.getQuestion());
-        questionNumber.setText(String.format(Locale.getDefault(), "%d/20", qCtr));
+        TextView questionView = findViewById(R.id.question);
+        questionView.setText(current.getQuestion());
+        TextView questionNumberView = findViewById(R.id.questionNumber);
+        questionNumberView.setText(String.format(Locale.getDefault(), "%d/20", qCtr));
 
+        Button optionA = findViewById(R.id.optionA);
+        Button optionB = findViewById(R.id.optionB);
+        Button optionC = findViewById(R.id.optionC);
+        Button optionD = findViewById(R.id.optionD);
+        Button[] options = new Button[]{optionA, optionB, optionC, optionD};
         for (int i = 0; i < 4; i++) {
             options[i].setText(current.getOptions().get(i));
         }
@@ -233,7 +202,7 @@ public class QuizActivity extends AppCompatActivity {
 
     private void loadSet() {
         if (getCurrentSet().isEmpty()) {
-            this.getCurrentSet().addAll(this.difficulty.getQuestionSet());
+            this.getCurrentSet().addAll(this.difficulty.questionSet);
         }
     }
 }
