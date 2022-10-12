@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setMessage("Do you want to exit?");
         builder.setPositiveButton("Exit", (dialog, which) -> finish());
         builder.setNegativeButton("Cancel", (dialog, which) -> dialog.cancel());
-        AlertDialog alert=builder.create();
+        AlertDialog alert = builder.create();
         alert.show();
     }
 

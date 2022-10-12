@@ -58,6 +58,7 @@ public class QuizActivity extends AppCompatActivity {
     private void setupButtons() {
         int i = 0;
         Button submit = findViewById(R.id.submit);
+        submit.setBackgroundColor(MaterialColors.getColor(submit, R.attr.colorPrimaryVariant));
 
         Button optionA = findViewById(R.id.optionA);
         Button optionB = findViewById(R.id.optionB);
@@ -69,6 +70,7 @@ public class QuizActivity extends AppCompatActivity {
             selectedButton.setOnClickListener(v -> {
                 selectedId = id;
                 submit.setEnabled(true);
+                submit.setBackgroundColor(MaterialColors.getColor(submit, R.attr.colorPrimary));
 
                 for (Button button : options) {
                     button.setBackgroundColor(MaterialColors.getColor(button, R.attr.colorPrimary));
@@ -121,6 +123,7 @@ public class QuizActivity extends AppCompatActivity {
                     else {
                         selectedId = -1;
                         submit.setEnabled(false);
+                        submit.setBackgroundColor(MaterialColors.getColor(submit, R.attr.colorPrimaryVariant));
                         for (Button button : options) {
                             button.setBackgroundColor(MaterialColors.getColor(button, R.attr.colorPrimary));
                             button.setEnabled(true);

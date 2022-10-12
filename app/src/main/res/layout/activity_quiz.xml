@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   android:orientation="vertical"
-                                                   android:background="?background">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="?background">
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="392dp"
             android:layout_height="32dp"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="16dp">
+            android:layout_weight="1"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:id="@+id/timer"
+                android:gravity="center"
+                android:textColor="?colorOnSecondary"
+                android:background="@drawable/rounded_corner"
+                android:textSize="24sp"/>
+
+        <TextView
+                android:text="   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/space1"/>
+
+        <TextView
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:id="@+id/questionNumber"
+                android:gravity="center"
+                android:textColor="?colorOnSecondary"
+                android:background="@drawable/rounded_corner"
+                android:textSize="24sp"/>
+
+        <TextView
+                android:text="   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/space2"/>
 
         <TextView
                 android:text="Score: 0"
@@ -25,26 +55,6 @@
                 android:textColor="?colorOnSecondary"
                 android:background="@drawable/rounded_corner"/>
 
-        <TextView
-                android:layout_width="80dp"
-                android:layout_height="32dp"
-                android:id="@+id/questionNumber"
-                android:gravity="center"
-                android:textColor="?colorOnSecondary"
-                android:background="@drawable/rounded_corner"
-                android:textSize="24sp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"/>
-
-        <TextView
-                android:layout_width="120dp"
-                android:layout_height="32dp"
-                android:id="@+id/timer"
-                android:gravity="center"
-                android:textColor="?colorOnSecondary"
-                android:background="@drawable/rounded_corner"
-                android:textSize="24sp"/>
-
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -53,11 +63,7 @@
             android:layout_gravity="center"
             android:id="@+id/questionCard"
             app:cardCornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
-            app:layout_constraintTop_toBottomOf="@+id/questionNumber"
-            android:layout_marginTop="16dp"
+            android:layout_weight="1"
             app:cardBackgroundColor="?attr/cardBackgroundColor">
 
         <androidx.core.widget.NestedScrollView
@@ -94,12 +100,8 @@
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:id="@+id/optionA"
-            app:cornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/questionCard"
-            android:layout_marginTop="16dp"
-            app:layout_constraintHorizontal_bias="0.483"/>
+            android:layout_weight="1"
+            app:cornerRadius="12dp"/>
 
     <Button
             android:textSize="16sp"
@@ -107,12 +109,8 @@
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:id="@+id/optionB"
+            android:layout_weight="1"
             app:cornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.483"
-            app:layout_constraintTop_toBottomOf="@+id/optionA"
-            android:layout_marginTop="8dp"
             />
 
     <Button
@@ -121,12 +119,8 @@
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:id="@+id/optionC"
+            android:layout_weight="1"
             app:cornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintTop_toBottomOf="@+id/optionB"
-            android:layout_marginTop="8dp"
             />
 
     <Button
@@ -135,12 +129,8 @@
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:id="@+id/optionD"
+            android:layout_weight="1"
             app:cornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.483"
-            app:layout_constraintTop_toBottomOf="@+id/optionC"
-            android:layout_marginTop="8dp"
             />
 
     <Button
@@ -151,14 +141,8 @@
             android:layout_gravity="center"
             android:enabled="false"
             android:id="@+id/submit"
+            android:layout_weight="1"
             app:cornerRadius="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/optionD"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.07"
             />
 
 </LinearLayout>
