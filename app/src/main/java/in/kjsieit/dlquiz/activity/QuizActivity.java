@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.google.android.material.color.MaterialColors;
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.Maps;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
@@ -58,7 +59,6 @@ public class QuizActivity extends AppCompatActivity {
         int i = 0;
         Button submit = findViewById(R.id.submit);
         submit.setEnabled(false);
-        submit.setText("Submit");
 
         Button optionA = findViewById(R.id.optionA);
         Button optionB = findViewById(R.id.optionB);
@@ -72,10 +72,10 @@ public class QuizActivity extends AppCompatActivity {
                 submit.setEnabled(true);
 
                 for (Button button : options) {
-                    button.setBackgroundColor(getResources().getColor(R.color.purple_500, null));
+                    button.setBackgroundColor(MaterialColors.getColor(button, R.attr.colorPrimary));
                 }
 
-                selectedButton.setBackgroundColor(getResources().getColor(R.color.purple_700, null));
+                selectedButton.setBackgroundColor(MaterialColors.getColor(selectedButton, R.attr.colorPrimaryVariant));
             });
             i++;
         }
@@ -123,7 +123,7 @@ public class QuizActivity extends AppCompatActivity {
                         selectedId = -1;
                         submit.setEnabled(false);
                         for (Button button : options) {
-                            button.setBackgroundColor(getResources().getColor(R.color.purple_500, null));
+                            button.setBackgroundColor(MaterialColors.getColor(button, R.attr.colorPrimary));
                             button.setEnabled(true);
                         }
                         phase = Phase.ANSWER;

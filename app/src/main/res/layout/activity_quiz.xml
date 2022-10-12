@@ -3,46 +3,8 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
-
-    <TextView
-            android:layout_width="120dp"
-            android:layout_height="32dp"
-            android:id="@+id/timer"
-            android:gravity="center"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"/>
-
-    <ScrollView
-            android:layout_width="392dp"
-            android:layout_height="168dp"
-            android:id="@+id/questionContainer"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
-            app:layout_constraintTop_toBottomOf="@+id/questionNumber"
-            android:layout_marginTop="16dp">
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/question"
-                android:gravity="center"
-                />
-    </ScrollView>
-
-    <TextView
-            android:layout_width="80dp"
-            android:layout_height="32dp"
-            android:id="@+id/questionNumber"
-            android:gravity="center"
-            app:layout_constraintEnd_toStartOf="@+id/score"
-            app:layout_constraintStart_toEndOf="@+id/timer"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            app:layout_constraintHorizontal_bias="0.491"/>
+                                                   android:layout_height="match_parent"
+                                                   android:background="?background">
 
     <TextView
             android:text="Score: 0"
@@ -50,59 +12,139 @@
             android:layout_height="32dp"
             android:id="@+id/score"
             android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="?colorOnSecondary"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="12dp"
+            />
+
+    <TextView
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:id="@+id/questionNumber"
+            android:gravity="center"
+            android:textColor="?colorOnSecondary"
+            android:background="@drawable/rounded_corner"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/timer"
+            app:layout_constraintEnd_toStartOf="@+id/score"/>
+
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:id="@+id/timer"
+            android:gravity="center"
+            android:textColor="?colorOnSecondary"
+            android:background="@drawable/rounded_corner"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="12dp"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="392dp"
+            android:layout_height="168dp"
+            android:id="@+id/questionCard"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintTop_toBottomOf="@+id/questionNumber"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/questionScrollView"
+                android:fillViewport="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/questionLayout"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <TextView
+                        android:layout_width="376dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/question"
+                        android:gravity="center"
+                        android:textColor="?colorOnSecondary"
+                        android:textSize="24sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginEnd="8dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
+            android:textSize="16sp"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionA"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:cornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.483"
-            app:layout_constraintTop_toBottomOf="@+id/questionContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questionCard"
             android:layout_marginTop="16dp"
-            app:backgroundTint="@color/purple_500"/>
+            app:layout_constraintHorizontal_bias="0.483"/>
 
     <Button
+            android:textSize="16sp"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionB"
+            app:cornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.483"
             app:layout_constraintTop_toBottomOf="@+id/optionA"
             android:layout_marginTop="8dp"
-            app:backgroundTint="@color/purple_500"/>
+            />
 
     <Button
+            android:textSize="16sp"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionC"
+            app:cornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintTop_toBottomOf="@+id/optionB"
             android:layout_marginTop="8dp"
-            app:backgroundTint="@color/purple_500"/>
+            />
 
     <Button
+            android:textSize="16sp"
             android:layout_width="380dp"
             android:layout_height="75dp"
             android:id="@+id/optionD"
+            app:cornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.483"
             app:layout_constraintTop_toBottomOf="@+id/optionC"
             android:layout_marginTop="8dp"
-            app:backgroundTint="@color/purple_500"/>
+            />
 
     <Button
+            android:text="Submit"
+            android:textSize="20sp"
             android:layout_width="320dp"
             android:layout_height="90dp"
             android:id="@+id/submit"
+            app:cornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
@@ -110,6 +152,6 @@
             app:layout_constraintTop_toBottomOf="@+id/optionD"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.07"
-            app:backgroundTint="@color/purple_500"/>
+            />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
