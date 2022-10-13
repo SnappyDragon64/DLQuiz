@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DLDA Quiz</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="history_header">History</string>
+    <string name="theme_header">Theme</string>
+
+    <string name="history_title">Clear Quiz History</string>
+    <string name="theme_title">App Theme</string>
 </resources>
