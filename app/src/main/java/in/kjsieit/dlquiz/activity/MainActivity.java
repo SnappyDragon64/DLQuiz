@@ -1,6 +1,7 @@
 package in.kjsieit.dlquiz.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -8,8 +9,10 @@ import android.widget.Button;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.preference.PreferenceManager;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
@@ -24,6 +27,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setupButtons();
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String value = preferences.getString("theme", "system_default");
+        switch (value) {
+            case "light":
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                break;
+            case "dark":
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                break;
+            default:
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+                break;
+        }
     }
 
     @Override
