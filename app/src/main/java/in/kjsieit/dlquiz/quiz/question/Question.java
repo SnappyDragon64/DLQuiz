@@ -14,14 +14,14 @@ public class Question {
     }
 
     public String getQuestion() {
-        return question;
+        return this.question;
     }
 
     public List<String> getOptions() {
-        return options;
+        return this.options;
     }
 
     public int getAnswer() {
-        return answer;
+        return this.answer;
     }
 }

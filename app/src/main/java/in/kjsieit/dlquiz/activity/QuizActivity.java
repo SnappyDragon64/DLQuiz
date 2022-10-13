@@ -13,15 +13,17 @@ import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collec
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
+import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 import in.kjsieit.dlquiz.quiz.question.Question;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.util.*;
 
 public class QuizActivity extends AppCompatActivity {
-    private Random random = new Random();
+    private final Random random = new Random();
 
     private final Map<Difficulty, List<Question>> difficultyQuestionSetMap = Maps.newEnumMap(Difficulty.class);
+    private final ArrayList<AnsweredQuestion> answeredQuestions = new ArrayList<>();
 
     private Question current;
     private Difficulty difficulty = Difficulty.EASY;
@@ -101,6 +103,8 @@ public class QuizActivity extends AppCompatActivity {
                     }
 
                     options[current.getAnswer()].setBackgroundColor(getResources().getColor(R.color.green));
+                    List<String> optionStrings = current.getOptions();
+                    answeredQuestions.add(new AnsweredQuestion(current.getQuestion(), optionStrings.get(current.getAnswer()), optionStrings.get(selectedId), current.getAnswer() == selectedId ? 1 : 0));
 
                     for (Button buttons : options) {
                         buttons.setEnabled(false);
@@ -117,6 +121,7 @@ public class QuizActivity extends AppCompatActivity {
                         dat.putInt("easy", easyCtr);
                         dat.putInt("medium", mediumCtr);
                         dat.putInt("hard", hardCtr);
+                        dat.putParcelableArrayList("answered", answeredQuestions);
                         intent.putExtras(dat);
                         startActivity(intent);
                     }
