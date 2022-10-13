@@ -6,16 +6,16 @@
         <item name="colorPrimaryVariant">@color/somaiya_red_dark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/white</item>
-        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorSecondary">@color/somaiya_red</item>
+        <item name="colorSecondaryVariant">@color/somaiya_red_dark</item>
         <item name="colorOnSecondary">@color/somaiya_red_dark</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
         <item name="cardBackgroundColor">@color/white</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
-        <item name="android:windowBackground">@color/gray</item>
-        <item name="android:colorBackground">@color/gray</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
         <item name="android:windowFullscreen">true</item>
         <item name="windowNoTitle">true</item>
         <item name="background">@drawable/bg</item>
