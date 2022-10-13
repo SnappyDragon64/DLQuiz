@@ -1,9 +1,6 @@
 package in.kjsieit.dlquiz.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import in.kjsieit.dlquiz.R;
@@ -41,9 +38,12 @@ public class ScorecardActivity extends AppCompatActivity {
         else
             timestr = String.format(Locale.getDefault(), "%02d:%02d", m, s);
 
-        String qstr = String.format(Locale.getDefault(), "Easy: %d\nMedium: %d\nHard: %d", easy, medium, hard);
+        String qstr = String.format(Locale.getDefault(), "Distribution:\nEasy: %d\nMedium: %d\nHard: %d", easy, medium, hard);
 
-        TextView scoreView = findViewById(R.id.scoredisplay);
-        scoreView.setText(String.format("%s\n%s\n%s", scorestr, timestr, qstr));
+        TextView statView = findViewById(R.id.statDisplay);
+        statView.setText(String.format("%s\n%s", scorestr, timestr));
+
+        TextView distView = findViewById(R.id.distDisplay);
+        distView.setText(qstr);
     }
 }
