@@ -10,13 +10,11 @@ import android.widget.Space;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.RecyclerView;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Locale;
 
 public class ScorecardActivity extends AppCompatActivity {
@@ -67,7 +65,7 @@ public class ScorecardActivity extends AppCompatActivity {
 
         for (int i = 0; i < 20; i++) {
             LayoutInflater infalInflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View childView = infalInflater.inflate(R.xml.question_card, null);
+            View childView = infalInflater.inflate(R.layout.question_card_layout, null);
             CardView qCard = childView.findViewById(R.id.qCard);
             TextView qText = childView.findViewById(R.id.qText);
             TextView qSelectedAnswer = childView.findViewById(R.id.qSelectedAnswer);
