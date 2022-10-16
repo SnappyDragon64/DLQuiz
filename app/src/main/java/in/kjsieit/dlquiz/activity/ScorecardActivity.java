@@ -1,6 +1,12 @@
 package in.kjsieit.dlquiz.activity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.Space;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -56,16 +62,16 @@ public class ScorecardActivity extends AppCompatActivity {
         TextView distView = findViewById(R.id.distDisplay);
         distView.setText(qstr);
 
-        int[] qCards = {R.id.qCard1, R.id.qCard2, R.id.qCard3, R.id.qCard4, R.id.qCard5, R.id.qCard6, R.id.qCard7, R.id.qCard8, R.id.qCard9, R.id.qCard10, R.id.qCard11, R.id.qCard12, R.id.qCard13, R.id.qCard14, R.id.qCard15, R.id.qCard16, R.id.qCard17, R.id.qCard18, R.id.qCard19, R.id.qCard20};
-        int[] qTexts = {R.id.qText1, R.id.qText2, R.id.qText3, R.id.qText4, R.id.qText5, R.id.qText6, R.id.qText7, R.id.qText8, R.id.qText9, R.id.qText10, R.id.qText11, R.id.qText12, R.id.qText13, R.id.qText14, R.id.qText15, R.id.qText16, R.id.qText17, R.id.qText18, R.id.qText19, R.id.qText20};
-        int[] qSelectedAnswers = {R.id.qSelectedAnswer1, R.id.qSelectedAnswer2, R.id.qSelectedAnswer3, R.id.qSelectedAnswer4, R.id.qSelectedAnswer5, R.id.qSelectedAnswer6, R.id.qSelectedAnswer7, R.id.qSelectedAnswer8, R.id.qSelectedAnswer9, R.id.qSelectedAnswer10, R.id.qSelectedAnswer11, R.id.qSelectedAnswer12, R.id.qSelectedAnswer13, R.id.qSelectedAnswer14, R.id.qSelectedAnswer15, R.id.qSelectedAnswer16, R.id.qSelectedAnswer17, R.id.qSelectedAnswer18, R.id.qSelectedAnswer19, R.id.qSelectedAnswer20};
-        int[] qAnswers = {R.id.qAnswer1, R.id.qAnswer2, R.id.qAnswer3, R.id.qAnswer4, R.id.qAnswer5, R.id.qAnswer6, R.id.qAnswer7, R.id.qAnswer8, R.id.qAnswer9, R.id.qAnswer10, R.id.qAnswer11, R.id.qAnswer12, R.id.qAnswer13, R.id.qAnswer14, R.id.qAnswer15, R.id.qAnswer16, R.id.qAnswer17, R.id.qAnswer18, R.id.qAnswer19, R.id.qAnswer20};
+        LinearLayout layout = findViewById(R.id.qCardList);
+        layout.removeAllViews();
 
         for (int i = 0; i < 20; i++) {
-            CardView qCard = findViewById(qCards[i]);
-            TextView qText = findViewById(qTexts[i]);
-            TextView qSelectedAnswer = findViewById(qSelectedAnswers[i]);
-            TextView qAnswer = findViewById(qAnswers[i]);
+            LayoutInflater infalInflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View childView = infalInflater.inflate(R.xml.question_card, null);
+            CardView qCard = childView.findViewById(R.id.qCard);
+            TextView qText = childView.findViewById(R.id.qText);
+            TextView qSelectedAnswer = childView.findViewById(R.id.qSelectedAnswer);
+            TextView qAnswer = childView.findViewById(R.id.qAnswer);
             AnsweredQuestion answeredQuestion = answeredQuestions.get(i);
 
             int borderId;
@@ -78,6 +84,14 @@ public class ScorecardActivity extends AppCompatActivity {
             qText.setText(answeredQuestion.getQuestion());
             qSelectedAnswer.setText(String.format(Locale.getDefault(), "Your answer: %s", answeredQuestion.getSelectedAnswer()));
             qAnswer.setText(String.format(Locale.getDefault(), "Answer: %s", answeredQuestion.getAnswer()));
+
+            layout.addView(childView);
+
+            if (i != 19) {
+                Space space = new Space(getBaseContext());
+                space.setMinimumHeight((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
+                layout.addView(space);
+            }
         }
     }
 }
