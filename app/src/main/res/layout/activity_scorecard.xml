@@ -99,30 +99,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText1"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer1"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer1"/>
@@ -149,30 +153,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText2"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer2"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer2"/>
@@ -199,30 +207,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText3"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer3"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer3"/>
@@ -249,30 +261,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText4"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer4"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer4"/>
@@ -299,30 +315,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText5"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer5"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer5"/>
@@ -349,30 +369,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText6"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer6"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer6"/>
@@ -399,30 +423,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText7"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer7"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer7"/>
@@ -449,30 +477,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText8"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer8"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer8"/>
@@ -499,30 +531,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText9"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer9"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer9"/>
@@ -549,30 +585,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText10"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer10"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer10"/>
@@ -599,30 +639,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText11"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer11"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer11"/>
@@ -649,30 +693,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText12"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer12"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer12"/>
@@ -699,30 +747,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText13"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer13"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer13"/>
@@ -749,30 +801,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText14"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer14"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer14"/>
@@ -799,30 +855,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText15"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer15"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer15"/>
@@ -849,30 +909,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText16"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer16"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer16"/>
@@ -899,30 +963,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText17"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer17"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer17"/>
@@ -949,30 +1017,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText18"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer18"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer18"/>
@@ -999,30 +1071,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText19"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer19"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer19"/>
@@ -1049,30 +1125,34 @@
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="72dp"
+                                android:layout_height="wrap_content"
                                 android:gravity="center"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
-                                android:textSize="14sp"
+                                android:textSize="18sp"
                                 android:id="@+id/qText20"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qSelectedAnswer20"/>
 
                         <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginStart="4dp"
-                                android:layout_marginEnd="4dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
                                 android:textColor="?colorOnPrimary"
                                 android:textSize="16sp"
                                 android:id="@+id/qAnswer20"/>

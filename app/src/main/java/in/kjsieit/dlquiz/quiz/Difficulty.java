@@ -6,13 +6,10 @@ import in.kjsieit.dlquiz.quiz.question.Question;
 import in.kjsieit.dlquiz.quiz.question.QuestionSetParser;
 
 public enum Difficulty {
-    EASY("easy", R.raw.easy), MEDIUM("medium", R.raw.medium), HARD("hard", R.raw.hard);
-
-    public final String name;
+    EASY(R.raw.easy), MEDIUM(R.raw.medium), HARD(R.raw.hard);
     public final ImmutableList<Question> questionSet;
 
-    Difficulty(String name, int id) {
-        this.name = name;
+    Difficulty(int id) {
         this.questionSet = QuestionSetParser.parseSet(id);
     }
 

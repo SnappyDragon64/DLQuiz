@@ -3,11 +3,11 @@ package in.kjsieit.dlquiz.activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.cardview.widget.CardView;
 import com.google.android.material.color.MaterialColors;
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.Maps;
 import in.kjsieit.dlquiz.R;
@@ -15,7 +15,6 @@ import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 import in.kjsieit.dlquiz.quiz.question.Question;
-import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
 
 import java.util.*;
 
@@ -104,7 +103,7 @@ public class QuizActivity extends AppCompatActivity {
 
                     options[current.getAnswer()].setBackgroundColor(getResources().getColor(R.color.green));
                     List<String> optionStrings = current.getOptions();
-                    answeredQuestions.add(new AnsweredQuestion(current.getQuestion(), optionStrings.get(current.getAnswer()), optionStrings.get(selectedId), current.getAnswer() == selectedId ? 1 : 0));
+                    answeredQuestions.add(new AnsweredQuestion(difficulty, current.getQuestion(), optionStrings.get(current.getAnswer()), optionStrings.get(selectedId), current.getAnswer() == selectedId ? 1 : 0));
 
                     for (Button buttons : options) {
                         buttons.setEnabled(false);
@@ -180,6 +179,14 @@ public class QuizActivity extends AppCompatActivity {
 
         current = getCurrentSet().get(random.nextInt(getCurrentSet().size()));
         getCurrentSet().remove(current);
+
+        int borderId;
+        if (difficulty == Difficulty.EASY) borderId = R.drawable.easy_border;
+        else if (difficulty == Difficulty.MEDIUM) borderId = R.drawable.medium_border;
+        else borderId = R.drawable.hard_border;
+
+        CardView cardView = findViewById(R.id.qCard);
+        cardView.setForeground(getResources().getDrawable(borderId, null));
 
         TextView questionView = findViewById(R.id.question);
         questionView.setText(current.getQuestion());

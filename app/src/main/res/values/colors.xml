@@ -6,6 +6,9 @@
     <color name="gray">#FF7F7F7F</color>
     <color name="dark_gray">#FF2F2F2F</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#FFE6324B</color>
-    <color name="green">#FF8FFE09</color>
+    <color name="red">#FFE74C3C</color>
+    <color name="green">#FF2ECC71</color>
+    <color name="easy">#FF27AE60</color>
+    <color name="medium">#FFF39C12</color>
+    <color name="hard">#FFC0392B</color>
 </resources>

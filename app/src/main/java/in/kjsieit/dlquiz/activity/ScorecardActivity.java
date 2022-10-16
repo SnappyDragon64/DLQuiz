@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import in.kjsieit.dlquiz.R;
+import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 
 import java.util.ArrayList;
@@ -66,6 +67,13 @@ public class ScorecardActivity extends AppCompatActivity {
             TextView qSelectedAnswer = findViewById(qSelectedAnswers[i]);
             TextView qAnswer = findViewById(qAnswers[i]);
             AnsweredQuestion answeredQuestion = answeredQuestions.get(i);
+
+            int borderId;
+            if (answeredQuestion.getDifficulty() == Difficulty.EASY) borderId = R.drawable.easy_border;
+            else if (answeredQuestion.getDifficulty() == Difficulty.MEDIUM) borderId = R.drawable.medium_border;
+            else borderId = R.drawable.hard_border;
+
+            qCard.setForeground(getResources().getDrawable(borderId, null));
             qCard.setCardBackgroundColor(getResources().getColor(answeredQuestion.isCorrect() ? R.color.green : R.color.red, null));
             qText.setText(answeredQuestion.getQuestion());
             qSelectedAnswer.setText(String.format(Locale.getDefault(), "Your answer: %s", answeredQuestion.getSelectedAnswer()));
