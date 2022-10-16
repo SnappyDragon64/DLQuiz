@@ -24,4 +24,14 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+            app:title="@string/credits_header">
+
+        <Preference
+                app:key="history"
+                app:title="@string/credits_title"
+                app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

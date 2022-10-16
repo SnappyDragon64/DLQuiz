@@ -5,7 +5,9 @@
     <!-- Preference Titles -->
     <string name="history_header">History</string>
     <string name="theme_header">Theme</string>
+    <string name="credits_header">Credits</string>
 
     <string name="history_title">Clear Quiz History</string>
     <string name="theme_title">App Theme</string>
+    <string name="credits_title">K. J. Somaiya Institute of Engineering \&amp; Information Technology, Sion (East)\n\nGuided by: Prof. Aarti Sahitya\n\nDeveloped by:\nPriyanshu Giriyan\nAakash Dhonde\nAyush Bhandari\nDeep Gandhi</string>
 </resources>
