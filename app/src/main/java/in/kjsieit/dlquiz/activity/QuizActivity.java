@@ -86,6 +86,7 @@ public class QuizActivity extends AppCompatActivity {
             switch (phase) {
                 case ANSWER:
                     if (current.getAnswer() == selectedId) {
+                        if (streakCtr == -1) streakCtr = 0;
                         streakCtr++;
                         TextView scoreView = findViewById(R.id.score);
                         scoreView.setText(String.format(Locale.getDefault(), "Score: %d", ++scoreCtr));
@@ -97,7 +98,7 @@ public class QuizActivity extends AppCompatActivity {
                         else
                             hardCtr++;
                     } else {
-                        streakCtr = -1;
+                        streakCtr = streakCtr == -1 ? -2 : -1;
                         options[selectedId].setBackgroundColor(getResources().getColor(R.color.red));
                     }
 
@@ -208,7 +209,7 @@ public class QuizActivity extends AppCompatActivity {
             streakCtr = 0;
             difficulty = difficulty.increase();
         }
-        else if (streakCtr == -1) {
+        else if (streakCtr == -2) {
             streakCtr = 0;
             difficulty = difficulty.decrease();
         }
