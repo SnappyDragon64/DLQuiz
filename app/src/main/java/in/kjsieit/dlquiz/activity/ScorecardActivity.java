@@ -79,13 +79,13 @@ public class ScorecardActivity extends AppCompatActivity {
 
             qCard.setForeground(getResources().getDrawable(borderId, null));
             qCard.setCardBackgroundColor(getResources().getColor(answeredQuestion.isCorrect() ? R.color.green : R.color.red, null));
-            qText.setText(answeredQuestion.getQuestion());
-            qSelectedAnswer.setText(String.format(Locale.getDefault(), "Your answer: %s", answeredQuestion.getSelectedAnswer()));
+            qText.setText(String.format(Locale.getDefault(), "%d. %s", i+1, answeredQuestion.getQuestion()));
+            qSelectedAnswer.setText(String.format(Locale.getDefault(), "Your Answer: %s", answeredQuestion.getSelectedAnswer()));
             qAnswer.setText(String.format(Locale.getDefault(), "Answer: %s", answeredQuestion.getAnswer()));
 
             layout.addView(childView);
 
-            if (i != 19) {
+            if (i < 19) {
                 Space space = new Space(getBaseContext());
                 space.setMinimumHeight((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
                 layout.addView(space);
