@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupButtons() {
         Button startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, QuizActivity.class)));
+        Button historyButton = findViewById(R.id.historyButton);
+        historyButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HistoryActivity.class)));
         Button settingsButton = findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SettingsActivity.class)));
     }

@@ -1,6 +1,7 @@
 package in.kjsieit.dlquiz.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.widget.Button;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
+import androidx.preference.PreferenceManager;
 import com.google.android.material.color.MaterialColors;
 import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.Maps;
 import in.kjsieit.dlquiz.R;
@@ -15,6 +17,9 @@ import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 import in.kjsieit.dlquiz.quiz.question.Question;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.*;
 
@@ -123,6 +128,35 @@ public class QuizActivity extends AppCompatActivity {
                         dat.putInt("hard", hardCtr);
                         dat.putParcelableArrayList("answered", answeredQuestions);
                         intent.putExtras(dat);
+
+                        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+                        String value = preferences.getString("history", new JSONArray().toString());
+                        try {
+                            JSONArray historyList  = new JSONArray(value);
+                            JSONObject historyObj = new JSONObject();
+                            historyObj.put("score", scoreCtr);
+                            historyObj.put("time", seconds);
+                            historyObj.put("easy", easyCtr);
+                            historyObj.put("medium", mediumCtr);
+                            historyObj.put("hard", hardCtr);
+                            JSONArray answeredObj = new JSONArray();
+
+                            for (AnsweredQuestion answeredQuestion : answeredQuestions) {
+                                JSONObject answeredQ = new JSONObject();
+                                answeredQ.put("difficulty", difficulty.name());
+                                answeredQ.put("question", answeredQuestion.getQuestion());
+                                answeredQ.put("answer", answeredQuestion.getAnswer());
+                                answeredQ.put("selectedAnswer", answeredQuestion.getSelectedAnswer());
+                                answeredQ.put("isCorrect", answeredQuestion.isCorrect());
+                                answeredObj.put(answeredQ);
+                            }
+                            historyObj.put("answeredQuestions", answeredObj);
+                            historyList.put(historyObj);
+                            preferences.edit().putString("history", historyList.toString()).apply();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                         startActivity(intent);
                     }
                     else {

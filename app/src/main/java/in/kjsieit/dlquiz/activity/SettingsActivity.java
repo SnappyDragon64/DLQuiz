@@ -1,5 +1,6 @@
 package in.kjsieit.dlquiz.activity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
@@ -8,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
 import in.kjsieit.dlquiz.R;
+import org.json.JSONArray;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -43,7 +46,8 @@ public class SettingsActivity extends AppCompatActivity {
                 builder.setCancelable(false);
                 builder.setMessage("Do you want to clear quiz history?");
                 builder.setPositiveButton("Clear History", (dialog, which) -> {
-                    // CLEAR HISTORY CODE
+                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                    preferences.edit().putString("history", new JSONArray().toString()).apply();
                 });
                 builder.setNegativeButton("Cancel", (dialog, which) -> dialog.cancel());
                 AlertDialog alert = builder.create();
