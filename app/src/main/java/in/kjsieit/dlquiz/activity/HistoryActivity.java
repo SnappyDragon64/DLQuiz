@@ -47,7 +47,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         int historyLen = historyList.length();
 
-        for (int i = 0; i < historyLen; i++) {
+        for (int i = historyLen - 1; i >= 0; i--) {
             try {
                 JSONObject historyObj = historyList.getJSONObject(i);
                 int score = historyObj.getInt("score");
@@ -107,7 +107,7 @@ public class HistoryActivity extends AppCompatActivity {
 
                 layout.addView(childView);
 
-                if (i < historyLen - 1) {
+                if (i > 0) {
                     Space space = new Space(getBaseContext());
                     space.setMinimumHeight((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
                     layout.addView(space);
