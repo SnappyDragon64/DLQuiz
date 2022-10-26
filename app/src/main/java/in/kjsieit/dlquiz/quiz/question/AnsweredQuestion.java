@@ -10,13 +10,15 @@ public class AnsweredQuestion implements Parcelable {
     String answer;
     String selectedAnswer;
     int isCorrect;
+    int time;
 
-    public AnsweredQuestion(Difficulty difficulty, String question, String answer, String selectedAnswer, int isCorrect) {
+    public AnsweredQuestion(Difficulty difficulty, String question, String answer, String selectedAnswer, int isCorrect, int time) {
         this.difficulty = difficulty;
         this.question = question;
         this.answer = answer;
         this.selectedAnswer = selectedAnswer;
         this.isCorrect = isCorrect;
+        this.time = time;
     }
 
     protected AnsweredQuestion(Parcel in) {
@@ -25,6 +27,7 @@ public class AnsweredQuestion implements Parcelable {
         answer = in.readString();
         selectedAnswer = in.readString();
         isCorrect = in.readInt();
+        time = in.readInt();
     }
 
     @Override
@@ -34,6 +37,7 @@ public class AnsweredQuestion implements Parcelable {
         dest.writeString(answer);
         dest.writeString(selectedAnswer);
         dest.writeInt(isCorrect);
+        dest.writeInt(time);
     }
 
     @Override
@@ -70,6 +74,10 @@ public class AnsweredQuestion implements Parcelable {
     }
 
     public boolean isCorrect() {
-        return isCorrect != 0;
+        return this.isCorrect != 0;
+    }
+
+    public int getTime() {
+        return this.time;
     }
 }

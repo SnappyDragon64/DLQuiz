@@ -13,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
+import in.kjsieit.dlquiz.quiz.util.Stringify;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -42,20 +43,10 @@ public class ScorecardActivity extends AppCompatActivity {
 
         String scorestr = String.format(Locale.getDefault(), "Score: %d", score);;
 
-        String timestr;
-        int h = time / 3600;
-        int m = (time % 3600) / 60;
-        int s = time % 60;
-
-        if (h > 0)
-            timestr = String.format(Locale.getDefault(), "%d:%02d:%02d", h, m, s);
-        else
-            timestr = String.format(Locale.getDefault(), "%02d:%02d", m, s);
-
         String qstr = String.format(Locale.getDefault(), "Distribution:\nEasy: %d\nMedium: %d\nHard: %d", easy, medium, hard);
 
         TextView statView = findViewById(R.id.statDisplay);
-        statView.setText(String.format("%s\n%s", scorestr, timestr));
+        statView.setText(String.format("%s\n%s", scorestr, Stringify.time(time)));
 
         TextView distView = findViewById(R.id.distDisplay);
         distView.setText(qstr);
@@ -67,6 +58,8 @@ public class ScorecardActivity extends AppCompatActivity {
             LayoutInflater infalInflater = (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View childView = infalInflater.inflate(R.layout.question_card_layout, null);
             CardView qCard = childView.findViewById(R.id.qCard);
+            TextView qNo = childView.findViewById(R.id.qNo);
+            TextView qTime = childView.findViewById(R.id.qTime);
             TextView qText = childView.findViewById(R.id.qText);
             TextView qSelectedAnswer = childView.findViewById(R.id.qSelectedAnswer);
             TextView qAnswer = childView.findViewById(R.id.qAnswer);
@@ -79,7 +72,9 @@ public class ScorecardActivity extends AppCompatActivity {
 
             qCard.setForeground(getResources().getDrawable(borderId, null));
             qCard.setCardBackgroundColor(getResources().getColor(answeredQuestion.isCorrect() ? R.color.green : R.color.red, null));
-            qText.setText(String.format(Locale.getDefault(), "%d. %s", i+1, answeredQuestion.getQuestion()));
+            qNo.setText(String.format(Locale.getDefault(), "Q%d", i+1));
+            qTime.setText(Stringify.time(answeredQuestion.getTime()));
+            qText.setText(answeredQuestion.getQuestion());
             qSelectedAnswer.setText(String.format(Locale.getDefault(), "Your Answer: %s", answeredQuestion.getSelectedAnswer()));
             qAnswer.setText(String.format(Locale.getDefault(), "Answer: %s", answeredQuestion.getAnswer()));
 

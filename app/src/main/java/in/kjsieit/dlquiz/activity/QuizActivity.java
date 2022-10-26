@@ -17,6 +17,7 @@ import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 import in.kjsieit.dlquiz.quiz.question.Question;
+import in.kjsieit.dlquiz.quiz.util.Stringify;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -34,6 +35,7 @@ public class QuizActivity extends AppCompatActivity {
     private Phase phase = Phase.ANSWER;
     private int selectedId = -1;
     private int seconds = 0;
+    private int qStartTime = 0;
     private int streakCtr = 0;
     private int qCtr = 0;
     private int scoreCtr = 0;
@@ -110,7 +112,7 @@ public class QuizActivity extends AppCompatActivity {
 
                     options[current.getAnswer()].setBackgroundColor(getResources().getColor(R.color.green));
                     List<String> optionStrings = current.getOptions();
-                    answeredQuestions.add(new AnsweredQuestion(difficulty, current.getQuestion(), optionStrings.get(current.getAnswer()), optionStrings.get(selectedId), current.getAnswer() == selectedId ? 1 : 0));
+                    answeredQuestions.add(new AnsweredQuestion(difficulty, current.getQuestion(), optionStrings.get(current.getAnswer()), optionStrings.get(selectedId), current.getAnswer() == selectedId ? 1 : 0, seconds - qStartTime));
 
                     for (Button buttons : options) {
                         buttons.setEnabled(false);
@@ -119,6 +121,8 @@ public class QuizActivity extends AppCompatActivity {
                     submit.setText("Next");
                     break;
                 case CHECK:
+                    qStartTime = seconds;
+
                     if (qCtr == 20) {
                         Intent intent = new Intent(QuizActivity.this, ScorecardActivity.class);
                         Bundle dat = new Bundle();
@@ -149,6 +153,7 @@ public class QuizActivity extends AppCompatActivity {
                                 answeredQ.put("answer", answeredQuestion.getAnswer());
                                 answeredQ.put("selectedAnswer", answeredQuestion.getSelectedAnswer());
                                 answeredQ.put("isCorrect", answeredQuestion.isCorrect());
+                                answeredQ.put("time", answeredQuestion.getTime());
                                 answeredObj.put(answeredQ);
                             }
                             historyObj.put("answeredQuestions", answeredObj);
@@ -185,17 +190,8 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void run()
             {
-                String time;
-                int h = seconds / 3600;
-                int m = (seconds % 3600) / 60;
-                int s = seconds % 60;
-
-                if (h > 0)
-                    time = String.format(Locale.getDefault(), "%d:%02d:%02d", h, m, s);
-                else
-                    time = String.format(Locale.getDefault(), "%02d:%02d", m, s);
                 TextView timerView = findViewById(R.id.timer);
-                timerView.setText(time);
+                timerView.setText(Stringify.time(seconds));
 
                 seconds++;
                 handler.postDelayed(this, 1000);

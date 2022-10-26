@@ -68,7 +68,8 @@ public class HistoryActivity extends AppCompatActivity {
                                 answeredQ.getString("question"),
                                 answeredQ.getString("answer"),
                                 answeredQ.getString("selectedAnswer"),
-                                answeredQ.getBoolean("isCorrect") ? 1 : 0
+                                answeredQ.getBoolean("isCorrect") ? 1 : 0,
+                                answeredQ.getInt("time")
                         ));
                     } catch (JSONException e) {
                         e.printStackTrace();
