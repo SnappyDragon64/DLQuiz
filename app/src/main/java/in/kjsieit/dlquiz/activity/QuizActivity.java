@@ -30,7 +30,7 @@ public class QuizActivity extends AppCompatActivity {
     private final ArrayList<AnsweredQuestion> answeredQuestions = new ArrayList<>();
 
     private Question current;
-    private Difficulty difficulty = Difficulty.EASY;
+    private Difficulty difficulty;
     private Phase phase = Phase.ANSWER;
     private int selectedId = -1;
     private int seconds = 0;
@@ -47,6 +47,7 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
         setupButtons();
         startTimer();
+        initDifficulty();
         loadQuestion();
     }
 
@@ -253,5 +254,37 @@ public class QuizActivity extends AppCompatActivity {
         if (getCurrentSet().isEmpty()) {
             this.getCurrentSet().addAll(this.difficulty.questionSet);
         }
+    }
+
+    private void initDifficulty() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        JSONArray historyList = new JSONArray();
+        String value = preferences.getString("history", historyList.toString());
+        try {
+            historyList = new JSONArray(value);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        float score = 0;
+
+        while (historyList.length() > 3) {
+            historyList.remove(0);
+        }
+
+        int historyLen = historyList.length();
+
+        for (int i = 0; i < historyLen; i++) {
+            try {
+                JSONObject historyObj = historyList.getJSONObject(i);
+                score += historyObj.getInt("score");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        score /= Math.max(historyLen, 1);
+
+        this.difficulty = score <= 15.0F ? score <= 10.0F ? Difficulty.EASY : Difficulty.MEDIUM : Difficulty.HARD;
     }
 }
