@@ -13,10 +13,12 @@
                 android:name=".activity.SettingsActivity"
                 android:exported="true"
                 android:noHistory="true"
-                android:label="@string/title_activity_settings"/>
+                android:label="@string/title_activity_settings"
+                android:screenOrientation="portrait"/>
         <activity
                 android:name=".activity.MainActivity"
-                android:exported="true">
+                android:exported="true"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -26,16 +28,19 @@
         <activity
                 android:name=".activity.QuizActivity"
                 android:exported="true"
-                android:noHistory="true">
+                android:noHistory="true"
+                android:screenOrientation="portrait">
         </activity>
         <activity
                 android:name=".activity.ScorecardActivity"
                 android:exported="true"
-                android:noHistory="true">
+                android:noHistory="true"
+                android:screenOrientation="portrait">
         </activity>
         <activity
                 android:name=".activity.HistoryActivity"
-                android:exported="true">
+                android:exported="true"
+                android:screenOrientation="portrait">
         </activity>
 
         <meta-data
