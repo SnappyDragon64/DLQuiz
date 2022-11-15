@@ -44,7 +44,7 @@
         "options": [
             "Combinational logic circuits",
             "Sequential logic circuits",
-            "Both a &amp; b",
+            "Both a & b",
             "None of the mentioned"
         ],
         "answer": 0
@@ -142,10 +142,10 @@
     {
         "question": "What input should be given to “S” when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.Q—",
+            "K.Q̅",
             "K.Q",
             "J.Q",
-            "J.Q—"
+            "J.Q̅"
         ],
         "answer": 3
     },
@@ -232,10 +232,10 @@
     {
         "question": "What must be the input given to “R” when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.Q—",
+            "K.Q̅",
             "K.Q",
             "J.Q",
-            "J.Q—"
+            "J.Q̅"
         ],
         "answer": 1
     },
@@ -382,10 +382,10 @@
     {
         "question": "Which of the following options correctly represents the consensus law of Digital Circuits?",
         "options": [
-            "AB + A—C + BC = AB + A—C",
-            "A—B + A—C + BC = AB + A—C",
-            "AB + A—C + BC = AB + A—C—",
-            "A—B + A—C + BC = AB + A—C—"
+            "AB + A̅C + BC = AB + A̅C",
+            "A̅B + A̅C + BC = AB + A̅C",
+            "AB + A̅C + BC = AB + A̅C̅",
+            "A̅B + A̅C + BC = AB + A̅C̅"
         ],
         "answer": 0
     },
@@ -420,12 +420,12 @@
         "answer": 3
     },
     {
-        "question": "Which of the following options represent the correct reduction of XY—Z + X—Y—Z?",
+        "question": "Which of the following options represent the correct reduction of XY̅Z + X̅Y̅Z?",
         "options": [
             "0",
-            "Y—Z",
-            "X + X—",
-            "2Y—Z"
+            "Y̅Z",
+            "X + X̅",
+            "2Y̅Z"
         ],
         "answer": 1
     },

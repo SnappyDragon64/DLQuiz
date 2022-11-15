@@ -180,12 +180,12 @@
         "answer": 0
     },
     {
-        "question": "What is the significance of the J and K terminals on the J-K flip-flop?",
+        "question": "Which of the following is an important feature of the sum-of-products form of expressions?",
         "options": [
-            "There is no known significance in their designations",
-            "The J represents “jump,” which is how the Q output reacts whenever the clock goes high and the J input is also HIGH",
-            "The letters were chosen in honour of Jack Kilby, the inventory of the integrated circuit",
-            "All of the other letters of the alphabet are already in use"
+            "All logic circuits are reduced to nothing more than simple AND and OR operations",
+            "The delay times are greatly reduced over other forms",
+            "No signal must pass through more than two gates, not including inverters",
+            "The maximum number of gates that any signal must pass through is reduced by a factor of two"
         ],
         "answer": 0
     },
@@ -690,12 +690,12 @@
         "answer": 0
     },
     {
-        "question": "Which of the following is an important feature of the sum-of-products form of expressions?",
+        "question": "Which of the following expressions is in the product-of-sums form?",
         "options": [
-            "All logic circuits are reduced to nothing more than simple AND and OR operations",
-            "The delay times are greatly reduced over other forms",
-            "No signal must pass through more than two gates, not including inverters",
-            "The maximum number of gates that any signal must pass through is reduced by a factor of two"
+            "(A + B)(C + D)",
+            "(AB)(CD)",
+            "AB(CD)",
+            "AB + CD"
         ],
         "answer": 0
     }
