@@ -41,7 +41,7 @@ public class ScorecardActivity extends AppCompatActivity {
             answeredQuestions = dat.getParcelableArrayList("answered");
         }
 
-        String scorestr = String.format(Locale.getDefault(), "Score: %d", score);;
+        String scorestr = String.format(Locale.getDefault(), "Score: %d", score);
 
         String qstr = String.format(Locale.getDefault(), "Distribution:\nEasy: %d\nMedium: %d\nHard: %d", easy, medium, hard);
 

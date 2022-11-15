@@ -2,16 +2,11 @@ package in.kjsieit.dlquiz.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.preference.PreferenceManager;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.util.ResourcesHelper;
