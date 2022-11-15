@@ -16,6 +16,8 @@ import androidx.preference.PreferenceManager;
 import in.kjsieit.dlquiz.R;
 import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
+import in.kjsieit.dlquiz.quiz.util.Bundler;
+import in.kjsieit.dlquiz.quiz.util.Stringify;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,29 +78,13 @@ public class HistoryActivity extends AppCompatActivity {
                 View childView = infalInflater.inflate(R.layout.history_card_layout, null);
                 CardView cardView = childView.findViewById(R.id.hCard);
 
-                String timestr;
-                int h = seconds / 3600;
-                int m = (seconds % 3600) / 60;
-                int s = seconds % 60;
-
-                if (h > 0)
-                    timestr = String.format(Locale.getDefault(), "%d:%02d:%02d", h, m, s);
-                else
-                    timestr = String.format(Locale.getDefault(), "%02d:%02d", m, s);
                 TextView scoreDisp = childView.findViewById(R.id.scoreDisp);
                 scoreDisp.setText(String.format(Locale.getDefault(), "%d/20", score));
                 TextView timeDisp = childView.findViewById(R.id.timeDisp);
-                timeDisp.setText(timestr);
+                timeDisp.setText(Stringify.time(seconds));
 
                 Intent intent = new Intent(HistoryActivity.this, ScorecardActivity.class);
-                Bundle dat = new Bundle();
-                dat.putInt("score", score);
-                dat.putInt("time", seconds);
-                dat.putInt("easy", easyCtr);
-                dat.putInt("medium", mediumCtr);
-                dat.putInt("hard", hardCtr);
-                dat.putParcelableArrayList("answered", answeredQuestions);
-                intent.putExtras(dat);
+                intent.putExtras(Bundler.bundle(score, seconds, easyCtr, mediumCtr, hardCtr, answeredQuestions));
 
                 cardView.setOnClickListener(v -> startActivity(intent));
 

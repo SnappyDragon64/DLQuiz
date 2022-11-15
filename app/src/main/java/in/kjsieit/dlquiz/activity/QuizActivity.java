@@ -17,6 +17,7 @@ import in.kjsieit.dlquiz.quiz.Difficulty;
 import in.kjsieit.dlquiz.quiz.Phase;
 import in.kjsieit.dlquiz.quiz.question.AnsweredQuestion;
 import in.kjsieit.dlquiz.quiz.question.Question;
+import in.kjsieit.dlquiz.quiz.util.Bundler;
 import in.kjsieit.dlquiz.quiz.util.Stringify;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -125,14 +126,7 @@ public class QuizActivity extends AppCompatActivity {
 
                     if (qCtr == 20) {
                         Intent intent = new Intent(QuizActivity.this, ScorecardActivity.class);
-                        Bundle dat = new Bundle();
-                        dat.putInt("score", scoreCtr);
-                        dat.putInt("time", seconds);
-                        dat.putInt("easy", easyCtr);
-                        dat.putInt("medium", mediumCtr);
-                        dat.putInt("hard", hardCtr);
-                        dat.putParcelableArrayList("answered", answeredQuestions);
-                        intent.putExtras(dat);
+                        intent.putExtras(Bundler.bundle(scoreCtr, seconds, easyCtr, mediumCtr, hardCtr, answeredQuestions));
 
                         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
                         String value = preferences.getString("history", new JSONArray().toString());
