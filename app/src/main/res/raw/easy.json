@@ -5,9 +5,9 @@
             "Field of electronics involving the study of digital signal",
             "Engineering of devices that digital signal",
             "Engineering of devices that produce digital signal",
-            "All of the mentioned"
+            "All pf the mentioned"
         ],
-        "answer": 3
+        "answer": 1
     },
     {
         "question": "Which of the following is correct for Digital Circuits?",
@@ -17,7 +17,7 @@
             "Easier to perform error detection and correction with digital signal",
             "All of the mentioned"
         ],
-        "answer": 3
+        "answer": 2
     },
     {
         "question": "What is a Circuit?",
@@ -37,17 +37,17 @@
             "Digital cameras",
             "All of the mentioned"
         ],
-        "answer": 3
+        "answer": 1
     },
     {
         "question": "Which of the following is a type of digital logic circuit?",
         "options": [
             "Combinational logic circuits",
             "Sequential logic circuits",
-            "Both a & b",
+            "Both a &amp; b",
             "None of the mentioned"
         ],
-        "answer": 3
+        "answer": 0
     },
     {
         "question": "Which of the following options comes under the non – saturated logic family in Digital Electronics?",
@@ -57,7 +57,7 @@
             "Integrated – injection Logic",
             "Diode – Transistor Logic"
         ],
-        "answer": 0
+        "answer": 1
     },
     {
         "question": "What is a switching function that has more than one output called in Digital Electronics?",
@@ -67,7 +67,7 @@
             "Multiple-gate function",
             "Multiple-output function"
         ],
-        "answer": 1
+        "answer": 2
     },
     {
         "question": "Which characteristic of IC in Digital Circuits represents a function of the switching time of a particular transistor?",
@@ -87,7 +87,7 @@
             "When its output impedance is high and the input impedance is low",
             "When its output impedance is low and the input impedance is high"
         ],
-        "answer": 3
+        "answer": 2
     },
     {
         "question": "Which of the following digital logic circuits can be used to add more than 1 – bit simultaneously?",
@@ -97,7 +97,7 @@
             "Half – adder",
             "Serial adder"
         ],
-        "answer": 1
+        "answer": 3
     },
     {
         "question": "Which gates in Digital Circuits are required to convert a NOR-based SR latch to an SR flip-flop?",
@@ -107,7 +107,7 @@
             "Two 2 input OR gates",
             "Two 3 input OR gates"
         ],
-        "answer": 0
+        "answer": 1
     },
     {
         "question": "When does a negative level triggered flip-flop in Digital Electronics changes its state?",
@@ -117,7 +117,7 @@
             "When the inputs are all zero",
             "When the inputs are all one"
         ],
-        "answer": 0
+        "answer": 1
     },
     {
         "question": "Which of the following options represent the synchronous control inputs in an S – R flip flop?",
@@ -127,7 +127,7 @@
             "Clock",
             "Both S and R"
         ],
-        "answer": 3
+        "answer": 1
     },
     {
         "question": "What must be used along with synchronous control inputs to trigger a change in the flip flop?",
@@ -147,10 +147,10 @@
             "Propagation delay",
             "Noise immunity"
         ],
-        "answer": 0
+        "answer": 2
     },
     {
-        "question": "What will be the output from a D flip – flop if the clock is low and D  = 0?",
+        "question": "What will be the output from a D flip – flop if the clock is low and D = 0?",
         "options": [
             "0",
             "1",
@@ -200,7 +200,7 @@
         "answer": 1
     },
     {
-        "question": "What will be the output from a D flip-flop if D  = 1 and the clock is low?",
+        "question": "What will be the output from a D flip-flop if D = 1 and the clock is low?",
         "options": [
             "No change",
             "Toggle between 0 and 1",
@@ -220,12 +220,12 @@
         "answer": 0
     },
     {
-        "question": "What input should be given to “S when SR flip – flop is converted to JK flip – flop?",
+        "question": "What input should be given to “S” when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.Q̅",
+            "K.Q—",
             "K.Q",
             "J.Q",
-            "J.Q̅"
+            "J.Q—"
         ],
         "answer": 3
     },
@@ -312,10 +312,10 @@
     {
         "question": "What must be the input given to “R” when SR flip – flop is converted to JK flip – flop?",
         "options": [
-            "K.Q̅",
+            "K.Q—",
             "K.Q",
             "J.Q",
-            "J.Q̅"
+            "J.Q—"
         ],
         "answer": 1
     },
@@ -365,7 +365,7 @@
             "Merged Transistor Logic",
             "Emitter – Coupled Logic",
             "High threshold logic",
-            "Resistor –  Transistor logic"
+            "Resistor – Transistor logic"
         ],
         "answer": 0
     },
@@ -450,7 +450,7 @@
         "answer": 0
     },
     {
-        "question": "The result “X + XY  =  X” follows which of these laws?",
+        "question": "The result “X + XY = X” follows which of these laws?",
         "options": [
             "Consensus law",
             "Distributive law",
@@ -462,10 +462,10 @@
     {
         "question": "Which of the following options correctly represents the consensus law of Digital Circuits?",
         "options": [
-            "AB + A̅C + BC = AB +  A̅C",
-            "A̅B + A̅C + BC = AB +  A̅C",
-            "AB + A̅C + BC = AB +  AC̅",
-            "A̅B + A̅C + BC = AB +  AC̅"
+            "AB + A—C + BC = AB + A—C",
+            "A—B + A—C + BC = AB + A—C",
+            "AB + A—C + BC = AB + A—C—",
+            "A—B + A—C + BC = AB + A—C—"
         ],
         "answer": 0
     },
@@ -500,17 +500,17 @@
         "answer": 3
     },
     {
-        "question": "Which of the following options represent the correct reduction of XY̅Z + XY̅Z ?",
+        "question": "Which of the following options represent the correct reduction of XY—Z + X—Y—Z?",
         "options": [
             "0",
-            "Y̅Z",
-            "X  + X̅",
-            "2Y̅Z"
+            "Y—Z",
+            "X + X—",
+            "2Y—Z"
         ],
         "answer": 1
     },
     {
-        "question": "A priority encoder has four inputs I₀, I₁, I₂, and I₃ where I₃ has the highest priority and I₀ has the least priority. If I₂  =  1, what will be the output?",
+        "question": "A priority encoder has four inputs I₀, I₁, I₂, and I₃ where I₃ has the highest priority and I₀ has the least priority. If I₂ = 1, what will be the output?",
         "options": [
             "00",
             "01",
@@ -520,7 +520,7 @@
         "answer": 2
     },
     {
-        "question": "Which of the following options are correct for a 4 – 1 multiplexer?",
+        "question": "Which of the following options are correct for a 4×1 multiplexer?",
         "options": [
             "It has four 3 – input AND gates",
             "It has four 2 – input AND gates",
@@ -546,6 +546,156 @@
             "Selection pin",
             "Logic pin",
             "Preset pin"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The MOS technology based semiconductor ROMs are classified into _____ categories.",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "MOS ROM is constructed using __________",
+        "options": [
+            "FETs",
+            "Transistors",
+            "MOSFETs",
+            "BJTs"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The full form of EEPROM is __________",
+        "options": [
+            "Erasable Electrically Programmable ROMs",
+            "Electrically Erasable Programmable ROMs",
+            "Electrically Erasable Programming ROMs",
+            "Electrically Erasable Programmed ROMs"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following best describes EPROMs?",
+        "options": [
+            "EPROMs can be programmed only once",
+            "EPROMs can be erased by UV",
+            "EPROMs can be erased by shorting all inputs to the ground",
+            "EPROMs can be erased electrically"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The Width of a processor’s data path is measured in bits. Which of the following are common data paths?",
+        "options": [
+            "8 bits",
+            "12 bits",
+            "16 bits",
+            "32 bits"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What type of memory is not directly addressable by the CPU and requires special software called EMS (expanded memory specification)?",
+        "options": [
+            "Extended",
+            "Expanded",
+            "Base",
+            "Conventional"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which bus is used for input and output in case of microprocessor operation?",
+        "options": [
+            "Address bus",
+            "System bus",
+            "Control bus",
+            "Data bus"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the major difference between DRAM and SRAM?",
+        "options": [
+            "Dynamic RAMs are always active; static RAMs must reset between data read/write cycles",
+            "SRAMs can hold data via a static charge, even with power off",
+            "The only difference is the terminal from which the data is removed—from the FET Drain or Source",
+            "DRAMs must be periodically refreshed"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following is not a part of Hard disk?",
+        "options": [
+            "Platter",
+            "Read/Write",
+            "Valve",
+            "Spindle"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which ROM can be erased by an electrical signal?",
+        "options": [
+            "ROM",
+            "Mask ROM",
+            "EPROM",
+            "EEPROM"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In the floppy drive, data is written to and read from the disk via a magnetic _____ head mechanism.",
+        "options": [
+            "Cluster",
+            "Read/Write",
+            "Cylinder",
+            "Recordable"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What does the term “random access” mean in terms of memory?",
+        "options": [
+            "Any address can be accessed in systematic order",
+            "Any address can be accessed in any order",
+            "Addresses must be accessed in a specific order",
+            "Any address can be accessed in reverse order"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which type of ROM has to be custom built by the factory?",
+        "options": [
+            "EEPROM",
+            "Mask ROM",
+            "EPROM",
+            "PROM"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The computer’s main memory is __________",
+        "options": [
+            "Hard drive and RAM",
+            "CD-ROM and hard drive",
+            "RAM and ROM",
+            "CMOS and hard drive"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A major disadvantage of the mask ROM is that ____________",
+        "options": [
+            "It is time consuming to change the stored data when system requirements change",
+            "It is very expensive to change the stored data when system requirements change",
+            "It cannot be reprogrammed if stored data needs to be changed",
+            "It has an extremely short life expectancy and requires frequent replacement"
         ],
         "answer": 0
     }

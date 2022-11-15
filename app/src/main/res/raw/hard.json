@@ -1,12 +1,702 @@
 [
-  {
-    "question": "HARD Q TEST",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2
-  }
+    {
+        "question": "What is Digital Electronics?",
+        "options": [
+            "Field of electronics involving the study of digital signal",
+            "Engineering of devices that digital signal",
+            "Engineering of devices that produce digital signal",
+            "All pf the mentioned"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is correct for Digital Circuits?",
+        "options": [
+            "Less susceptible to noise or degradation in quality",
+            "Use transistors to create logic gates to perform Boolean logic",
+            "Easier to perform error detection and correction with digital signal",
+            "All of the mentioned"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is a Circuit?",
+        "options": [
+            "Open-loop through which electrons can pass",
+            "Closed-loop through which electrons can pass",
+            "Closed-loop through which Neutrons can pass",
+            "None of the mentioned"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following is an example of a digital Electronic?",
+        "options": [
+            "Computers",
+            "Information appliances",
+            "Digital cameras",
+            "All of the mentioned"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following is a type of digital logic circuit?",
+        "options": [
+            "Combinational logic circuits",
+            "Sequential logic circuits",
+            "Both a &amp; b",
+            "None of the mentioned"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options comes under the non – saturated logic family in Digital Electronics?",
+        "options": [
+            "Emitter – coupled Logic",
+            "High-Threshold Logic",
+            "Integrated – injection Logic",
+            "Diode – Transistor Logic"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of the following digital logic circuits can be used to add more than 1 – bit simultaneously?",
+        "options": [
+            "Full – adder",
+            "Ripple – carry adder",
+            "Half – adder",
+            "Serial adder"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which gates in Digital Circuits are required to convert a NOR-based SR latch to an SR flip-flop?",
+        "options": [
+            "Two 2 input AND gates",
+            "Two 3 input AND gates",
+            "Two 2 input OR gates",
+            "Two 3 input OR gates"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "When does a negative level triggered flip-flop in Digital Electronics changes its state?",
+        "options": [
+            "When the clock is negative",
+            "When the clock is positive",
+            "When the inputs are all zero",
+            "When the inputs are all one"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following majorly determines the number of emitters in a TTL digital circuit?",
+        "options": [
+            "Fan – in",
+            "Fan – out",
+            "Propagation delay",
+            "Noise immunity"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What will be the output from a D flip – flop if the clock is low and D = 0?",
+        "options": [
+            "0",
+            "1",
+            "No change",
+            "Toggle between 0 and 1"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What are the basic gates in MOS logic family?",
+        "options": [
+            "NAND and NOR",
+            "AND and OR",
+            "NAND and OR",
+            "AND and NOR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How must the output of a gate in a TTL digital circuit act when it is HIGH?",
+        "options": [
+            "Acts as a voltage source",
+            "Acts as a current sink",
+            "Acts as a current source",
+            "Acts as a voltage sink"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What characteristic will a TTL digital circuit possess due to its multi-emitter transistor?",
+        "options": [
+            "Low capacitance",
+            "High capacitance",
+            "Low inductance",
+            "High inductance"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What input should be given to “S” when SR flip – flop is converted to JK flip – flop?",
+        "options": [
+            "K.Q—",
+            "K.Q",
+            "J.Q",
+            "J.Q—"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What value is to be considered for a “don’t care condition”?",
+        "options": [
+            "0",
+            "1",
+            "Either 0 or 1",
+            "Any number except 0 and 1"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What is the group of 1s in 4 cells of a K – map called?",
+        "options": [
+            "Pair",
+            "Quad",
+            "Octet",
+            "Octave"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What will be the frequency of the output from a JK flip – flop, when J = 1, K = 1, and a clock with pulse waveform is given?",
+        "options": [
+            "Half the frequency of clock input",
+            "Equal to the frequency of clock input",
+            "Twice the frequency of clock input",
+            "Independent of the frequency of clock input"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What gate is placed between clock input and the input of AND gate to convert a positive level triggered flip – flop to a negative level triggered flip – flop?",
+        "options": [
+            "NOR gate",
+            "NOT gate",
+            "Buffer",
+            "NAND gate"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In Digital Circuits, which of the following options represent the synchronous control inputs in a T flip flop?",
+        "options": [
+            "T",
+            "0",
+            "Clock",
+            "1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What will a TTL digital circuit possess due to the presence of a multi – emitter transistor?",
+        "options": [
+            "Smaller resistance",
+            "Larger area",
+            "Smaller area",
+            "Larger resistance"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How must the output of a gate act when it is LOW in a TTL circuit?",
+        "options": [
+            "Acts as a voltage source",
+            "Acts as a current sink",
+            "Acts as a current source",
+            "Acts as a voltage sink"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Which of the following gives the correct number of multiplexers required to build a 32 x 1 multiplexer?",
+        "options": [
+            "Two 16 x 1 mux",
+            "Three 8 x 1 mux",
+            "Two 8 x 1 mux",
+            "Three 16 x 1 mux"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What must be the input given to “R” when SR flip – flop is converted to JK flip – flop?",
+        "options": [
+            "K.Q—",
+            "K.Q",
+            "J.Q",
+            "J.Q—"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "What minimum distance is required for a single error correction according to Hamming’s analysis in Digital Electronics?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many errors can the Digital Electronics parity method can find in a single word?",
+        "options": [
+            "Single error",
+            "Double error",
+            "Triple error",
+            "Multiple errors"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the group of 1s present in 8 cells of a K – map called?",
+        "options": [
+            "Pair",
+            "Quad",
+            "Octet",
+            "Octave"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of these flip – flops cannot be used to construct a serial shift register?",
+        "options": [
+            "D – flip flop",
+            "SR flip – flop",
+            "T flip – flop",
+            "JK flip – flop"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Which of these options represent the other name of Inter – Integrated logic?",
+        "options": [
+            "Merged Transistor Logic",
+            "Emitter – Coupled Logic",
+            "High threshold logic",
+            "Resistor – Transistor logic"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options is a Current – Mode logic used in Digital Circuits?",
+        "options": [
+            "TTL",
+            "RTL",
+            "ECL",
+            "IIC"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many AND gates are required to construct a 4 – bit parallel multiplier if four 4 – bit parallel binary adders are given?",
+        "options": [
+            "Four 2 – input AND gates",
+            "Eight 2 – input AND gates",
+            "Sixteen 2 – input AND gates",
+            "Two 2 – input AND gates"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many cycles of addition and shifting in a 4 – bit multiplier are required to perform multiplication using the shift method?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many 4 – bit parallel binary adders will be required to construct a 4 – bit parallel multiplier?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "What kind of operation occurs in a J – K flip flop when both inputs J and K are equal to 1?",
+        "options": [
+            "Preset operation",
+            "Reset operation",
+            "Clear operation",
+            "Toggle operation"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following codes is a sequential code?",
+        "options": [
+            "8421 code",
+            "2421 code",
+            "5421 code",
+            "2441 code"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of these code pairs correctly represent Digital Electronics reflective codes?",
+        "options": [
+            "2421 and 5211",
+            "2421 and 8421",
+            "5211 and 8421",
+            "5421 and 2421"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following options correctly represent the characteristic of Excess – 3 code?",
+        "options": [
+            "It is a reflexive as well as a sequential code",
+            "It is a reflexive code but not a sequential code",
+            "It is a sequential code but not a reflexive code",
+            "It is neither a reflexive code nor a sequential code"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The result “X + XY = X” follows which of these laws?",
+        "options": [
+            "Consensus law",
+            "Distributive law",
+            "Duality law",
+            "Absorption law"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following options correctly represents the consensus law of Digital Circuits?",
+        "options": [
+            "AB + A—C + BC = AB + A—C",
+            "A—B + A—C + BC = AB + A—C",
+            "AB + A—C + BC = AB + A—C—",
+            "A—B + A—C + BC = AB + A—C—"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following points is not correct regarding an Ex – NOR gate in Digital Electronics?",
+        "options": [
+            "It is a one – bit comparator",
+            "It is a buffer",
+            "It is a one – bit inverter",
+            "It is a universal gate"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which gate is called the anti – coincidence and coincidence gate respectively?",
+        "options": [
+            "XNOR and XOR",
+            "AND and OR",
+            "OR and AND",
+            "XOR and XNOR"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "What frequency division of the pulsed clock signal can be obtained by connecting 4 flip – flops in cascade?",
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Which of the following options represent the correct reduction of XY—Z + X—Y—Z?",
+        "options": [
+            "0",
+            "Y—Z",
+            "X + X—",
+            "2Y—Z"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "A priority encoder has four inputs I₀, I₁, I₂, and I₃ where I₃ has the highest priority and I₀ has the least priority. If I₂ = 1, what will be the output?",
+        "options": [
+            "00",
+            "01",
+            "10",
+            "11"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "If A and B are the inputs of a half adder, the carry is given by __________",
+        "options": [
+            "A AND B",
+            "A OR B",
+            "A XOR B",
+            "A EX-NOR B"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Half-adders have a major limitation in that they cannot __________",
+        "options": [
+            "Accept a carry bit from a present stage",
+            "Accept a carry bit from a next stage",
+            "Accept a carry bit from a previous stage",
+            "Accept a carry bit from the following stages"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The difference between half adder and full adder is __________",
+        "options": [
+            "Half adder has two inputs while full adder has four inputs",
+            "Half adder has one output while full adder has two outputs",
+            "Half adder has two inputs while full adder has three inputs",
+            "All of the Mentioned"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If A, B and C are the inputs of a full adder then the sum is given by __________",
+        "options": [
+            "A AND B AND C",
+            "A OR B AND C",
+            "A XOR B XOR C",
+            "A OR B OR C"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If A, B and C are the inputs of a full adder then the carry is given by __________",
+        "options": [
+            "A AND B OR (A OR B) AND C",
+            "A OR B OR (A AND B) C",
+            "(A AND B) OR (A AND B)C",
+            "A XOR B XOR (A XOR B) AND C"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How many AND, OR and EXOR gates are required for the configuration of full adder?",
+        "options": [
+            "1, 2, 2",
+            "2, 1, 2",
+            "3, 1, 2",
+            "4, 0, 1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The decimal number system represents the decimal number in the form of ____________",
+        "options": [
+            "Hexadecimal",
+            "Binary coded",
+            "Octal",
+            "Decimal"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "2<sup>9</sup> input circuit will have total of ____________",
+        "options": [
+            "32 entries",
+            "128 entries",
+            "256 entries",
+            "512 entries"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "BCD adder can be constructed with 3 IC packages each of ____________",
+        "options": [
+            "2 bits",
+            "3 bits",
+            "4 bits",
+            "5 bits"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The output sum of two decimal digits can be represented in ____________",
+        "options": [
+            "Gray Code",
+            "Excess-3",
+            "BCD",
+            "Hexadecimal"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The addition of two decimal digits in BCD can be done through ____________",
+        "options": [
+            "BCD adder",
+            "Full adder",
+            "Ripple carry adder",
+            "Carry look ahead"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "3 bits full adder contains ____________",
+        "options": [
+            "3 combinational inputs",
+            "4 combinational inputs",
+            "6 combinational inputs",
+            "8 combinational inputs"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The simplified expression of full adder carry is ____________",
+        "options": [
+            "c = xy+xz+yz",
+            "c = xy+xz",
+            "c = xy+yz",
+            "c = x+y+z"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Complement of F’ gives back __________",
+        "options": [
+            "F’",
+            "F",
+            "FF",
+            "FF’"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Decimal digit in BCD can be represented by ____________",
+        "options": [
+            "1 input line",
+            "2 input lines",
+            "3 input lines",
+            "4 input lines"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The number of logic gates and the way of their interconnections can be classified as ____________",
+        "options": [
+            "Logical network",
+            "System network",
+            "Circuit network",
+            "Gate network"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is a recirculating register?",
+        "options": [
+            "Serial out connected to serial in",
+            "All Q outputs connected together",
+            "A register that can be used over again",
+            "Parallel out connected to Parallel in"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "When is it important to use a three-state buffer?",
+        "options": [
+            "When two or more outputs are connected to the same input",
+            "When all outputs are normally HIGH",
+            "When all outputs are normally LOW",
+            "When two or more outputs are connected to two or more inputs"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A bidirectional 4-bit shift register is storing the nibble 1110. Its input is LOW. The nibble 0111 is waiting to be entered on the serial data-input line. After two clock pulses, the shift register is storing ________",
+        "options": [
+            "1110",
+            "0111",
+            "1000",
+            "1001"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In a parallel in/parallel out shift register, D0 = 1, D1 = 1, D2 = 1, and D3 = 0. After three clock pulses, the data outputs are ________",
+        "options": [
+            "1110",
+            "0001",
+            "1100",
+            "1000"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The group of bits 10110111 is serially shifted (right-most bit first) into an 8-bit parallel output shift register with an initial state 11110000. After two clock pulses, the register contains ______________",
+        "options": [
+            "10111000",
+            "10110111",
+            "11110000",
+            "11111100"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "By adding recirculating lines to a 4-bit parallel-in serial-out shift register, it becomes a ________ ________ and ________ out register.",
+        "options": [
+            "Parallel-in, serial, parallel",
+            "Serial-in, parallel, serial",
+            "Series-parallel-in, series, parallel",
+            "Bidirectional in, parallel, series"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What type of register would have a complete binary number shifted in one bit at a time and have all the stored bits shifted out one at a time?",
+        "options": [
+            "Parallel-in Parallel-out",
+            "Parallel-in Serial-out",
+            "Serial-in Serial-out",
+            "Serial-in Parallel-out"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In a 4-bit Johnson counter sequence, there are a total of how many states or bit patterns?",
+        "options": [
+            "1",
+            "3",
+            "4",
+            "8"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If a 10-bit ring counter has an initial state 1101000000, what is the state after the second clock pulse?",
+        "options": [
+            "1101000000",
+            "0011010000",
+            "1100000000",
+            "0000000000"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How much storage capacity does each stage in a shift register represent?",
+        "options": [
+            "One bit",
+            "Two bits",
+            "Four bits",
+            "Eight bits"
+        ],
+        "answer": 0
+    }
 ]

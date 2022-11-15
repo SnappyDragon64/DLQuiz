@@ -1,12 +1,702 @@
 [
-  {
-    "question": "MEDIUM Q TEST",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1
-  }
+    {
+        "question": "How many inputs will a decimal-to-BCD encoder have?",
+        "options": [
+            "4",
+            "8",
+            "10",
+            "16"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How many outputs will a decimal-to-BCD encoder have?",
+        "options": [
+            "4",
+            "8",
+            "12",
+            "16"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "How is an encoder different from a decoder?",
+        "options": [
+            "The output of an encoder is a binary code for 1-of-N input",
+            "The output of a decoder is a binary code for 1-of-N input",
+            "The output of an encoder is a binary code for N-of-1 output",
+            "The output of a decoder is a binary code for N-of-1 output"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "If we record any music in any recorder, such types of process is called ___________",
+        "options": [
+            "Multiplexing",
+            "Encoding",
+            "Decoding",
+            "Demultiplexing"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Can an encoder be a transducer?",
+        "options": [
+            "Yes",
+            "No",
+            "May or may not be",
+            "Both are not even related slightly"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "How many OR gates are required for a Decimal-to-bcd encoder?",
+        "options": [
+            "2",
+            "10",
+            "3",
+            "4"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How many OR gates are required for an octal-to-binary encoder?",
+        "options": [
+            "3",
+            "2",
+            "8",
+            "10"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "For 8-bit input encoder how many combinations are possible?",
+        "options": [
+            "8",
+            "2^8",
+            "4",
+            "2^4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "The discrepancy of 0 output due to all inputs being 0 or D0, being 0 is resolved by using additional input known as ___________",
+        "options": [
+            "Enable",
+            "Disable",
+            "Strobe",
+            "Clock"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Can an encoder be called a multiplexer?",
+        "options": [
+            "No",
+            "Yes",
+            "Sometimes",
+            "Never"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "If two inputs are active on a priority encoder, which will be coded on the output?",
+        "options": [
+            "The higher value",
+            "The lower value",
+            "Neither of the inputs",
+            "Both of the inputs"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which circuit is generated from D flip-flop due to addition of an inverter by causing reduction in the number of inputs?",
+        "options": [
+            "Gated JK-latch",
+            "Gated SR-latch",
+            "Gated T-latch",
+            "Gated D-latch"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The characteristic of J-K flip-flop is similar to _____________",
+        "options": [
+            "S-R flip-flop",
+            "D flip-flop",
+            "T flip-flop",
+            "Gated T flip-flop"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "A J-K flip-flop can be obtained from the clocked S-R flip-flop by augmenting ___________",
+        "options": [
+            "Two AND gates",
+            "Two NAND gates",
+            "Two NOT gates",
+            "Two OR gates"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How is a J-K flip-flop made to toggle?",
+        "options": [
+            "J = 0, K = 0",
+            "J = 1, K = 0",
+            "J = 0, K = 1",
+            "J = 1, K = 1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The phenomenon of interpreting unwanted signals on J and K while Cp (clock pulse) is HIGH is called ___________",
+        "options": [
+            "Parity error checking",
+            "Ones catching",
+            "Digital discrimination",
+            "Digital filtering"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In J-K flip-flop, “no change” condition appears when ___________",
+        "options": [
+            "J = 1, K = 1",
+            "J = 1, K = 0",
+            "J = 0, K = 1",
+            "J = 0, K = 0"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A J-K flip-flop with J = 1 and K = 1 has a 20 kHz clock input. The Q output is ________",
+        "options": [
+            "Constantly LOW",
+            "Constantly HIGH",
+            "A 20 kHz square wave",
+            "A 10 kHz square wave"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "What is the significance of the J and K terminals on the J-K flip-flop?",
+        "options": [
+            "There is no known significance in their designations",
+            "The J represents “jump,” which is how the Q output reacts whenever the clock goes high and the J input is also HIGH",
+            "The letters were chosen in honour of Jack Kilby, the inventory of the integrated circuit",
+            "All of the other letters of the alphabet are already in use"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "On a J-K flip-flop, when is the flip-flop in a hold condition?",
+        "options": [
+            "J = 0, K = 0",
+            "J = 1, K = 0",
+            "J = 0, K = 1",
+            "J = 1, K = 1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Two J-K flip-flops with their J-K inputs tied HIGH are cascaded to be used as counters. After four input clock pulses, the binary count is ________",
+        "options": [
+            "00",
+            "11",
+            "01",
+            "10"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Four J-K flip-flops are cascaded with their J-K inputs tied HIGH. If the input frequency (fin) to the first flip-flop is 32 kHz, the output frequency (fout) is ________",
+        "options": [
+            "1 kHz",
+            "2 kHz",
+            "4 kHz",
+            "16 kHz"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Determine the output frequency for a frequency division circuit that contains 12 flip-flops with an input clock frequency of 20.48 MHz.",
+        "options": [
+            "10.24 kHz",
+            "5 kHz",
+            "30.24 kHz",
+            "15 kHz"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "How many flip-flops are in the 7475 IC?",
+        "options": [
+            "2",
+            "1",
+            "4",
+            "8"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The logical sum of two or more logical product terms is called __________",
+        "options": [
+            "SOP",
+            "POS",
+            "OR operation",
+            "NAND operation"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The expression Y=AB+BC+AC shows the _________ operation.",
+        "options": [
+            "EX-OR",
+            "SOP",
+            "POS",
+            "NOR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The expression Y=(A+B)(B+C)(C+A) shows the _________ operation.",
+        "options": [
+            "AND",
+            "POS",
+            "SOP",
+            "NAND"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A product term containing all K variables of the function in either complemented or uncomplemented form is called a __________",
+        "options": [
+            "Minterm",
+            "Maxterm",
+            "Midterm",
+            "∑ term"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "According to the property of minterm, how many combination will have value equal to 1 for K input variables?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The canonical sum of product form of the function y(A,B) = A + B is __________",
+        "options": [
+            "AB + BB + A’A",
+            "AB + AB’ + A’B",
+            "BA + BA’ + A’B’",
+            "AB’ + A’B + A’B’"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A variable on its own or in its complemented form is known as a __________",
+        "options": [
+            "Product Term",
+            "Literal",
+            "Sum Term",
+            "Word"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Maxterm is the sum of __________ of the corresponding Minterm with its literal complemented.",
+        "options": [
+            "Terms",
+            "Words",
+            "Numbers",
+            "Nibble"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Canonical form is a unique way of representing ____________",
+        "options": [
+            "SOP",
+            "Minterm",
+            "Boolean Expressions",
+            "POS"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "There are _____________ Minterms for 3 variables (a, b, c).",
+        "options": [
+            "0",
+            "2",
+            "8",
+            "1"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "_____________ expressions can be implemented using either (1) 2-level AND-OR logic circuits or (2) 2-level NAND logic circuits.",
+        "options": [
+            "POS",
+            "Literals",
+            "SOP",
+            "POS"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In boolean algebra, the OR operation is performed by which properties?",
+        "options": [
+            "Associative properties",
+            "Commutative properties",
+            "Distributive properties",
+            "All of the Mentioned"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The expression for Absorption law is given by _________",
+        "options": [
+            "A + AB = A",
+            "A + AB = B",
+            "AB + AA’ = A",
+            "A + B = B + A"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "According to boolean law: A + 1 =?",
+        "options": [
+            "1",
+            "A",
+            "0",
+            "A’"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The involution of A is equal to _________",
+        "options": [
+            "A",
+            "A’",
+            "1",
+            "0"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A(A + B) =?",
+        "options": [
+            "AB",
+            "1",
+            "(1 + AB)",
+            "A"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "DeMorgan’s theorem states that _________",
+        "options": [
+            "(AB)’ = A’ + B’",
+            "(A + B)’ = A’ * B",
+            "A’ + B’ = A’B’",
+            "(AB)’ = A’ + B"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(A + B)(A’ * B’) =?",
+        "options": [
+            "1",
+            "0",
+            "AB",
+            "AB’"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Complement of the expression A’B + CD’ is _________",
+        "options": [
+            "(A’ + B)(C’ + D)",
+            "(A + B’)(C’ + D)",
+            "(A’ + B)(C’ + D)",
+            "(A + B’)(C + D’)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Simplify Y = AB’ + (A’ + B)C.",
+        "options": [
+            "AB’ + C",
+            "AB + AC",
+            "A’B + AC’",
+            "AB + A"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The boolean function A + BC is a reduced form of ____________",
+        "options": [
+            "AB + BC",
+            "(A + B)(A + C)",
+            "A’B + AB’C",
+            "(A + C)B"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "A Karnaugh map (K-map) is an abstract form of ____________ diagram organized as a matrix of squares.",
+        "options": [
+            "Venn Diagram",
+            "Cycle Diagram",
+            "Block diagram",
+            "Triangular Diagram"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "There are ______ cells in a 4-variable K-map.",
+        "options": [
+            "12",
+            "16",
+            "18",
+            "8"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The K-map based Boolean reduction is based on the following Unifying Theorem: A + A’ = 1.",
+        "options": [
+            "Impact",
+            "Non Impact",
+            "Force",
+            "Complementarity"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Each product term of a group, w’.x.y’ and w.y, represents the ____________ in that group.",
+        "options": [
+            "Input",
+            "POS",
+            "Sum-of-Minterms",
+            "Sum of Maxterms"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The prime implicant which has at least one element that is not present in any other implicant is known as ___________",
+        "options": [
+            "Essential Prime Implicant",
+            "Implicant",
+            "Complement",
+            "Prime Complement"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Product-of-Sums expressions can be implemented using ___________",
+        "options": [
+            "2-level OR-AND logic circuits",
+            "2-level NOR logic circuits",
+            "2-level XOR logic circuits",
+            "Both 2-level OR-AND and NOR logic circuits"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Each group of adjacent Minterms (group size in powers of twos) corresponds to a possible product term of the given ___________",
+        "options": [
+            "Function",
+            "Value",
+            "Set",
+            "Word"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Don’t care conditions can be used for simplifying Boolean expressions in ___________",
+        "options": [
+            "Registers",
+            "Terms",
+            "K-maps",
+            "Latches"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "It should be kept in mind that don’t care terms should be used along with the terms that are present in ___________",
+        "options": [
+            "Minterms",
+            "Expressions",
+            "K-Map",
+            "Latches"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Using the transformation method you can realize any POS realization of OR-AND with only.",
+        "options": [
+            "XOR",
+            "NAND",
+            "AND",
+            "NOR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "There are many situations in logic design in which simplification of logic expression is possible in terms of XOR and _________________ operations.",
+        "options": [
+            "X-NOR",
+            "XOR",
+            "NOR",
+            "NAND"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "These logic gates are widely used in _______________ design and therefore are available in IC form.",
+        "options": [
+            "Sampling",
+            "Digital",
+            "Analog",
+            "Systems"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "In case of XOR/XNOR simplification we have to look for the following _______________",
+        "options": [
+            "Diagonal Adjacencies",
+            "Offset Adjacencies",
+            "Straight Adjacencies",
+            "Both diagonal and offset adjencies"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Entries known as _______________ mapping.",
+        "options": [
+            "Diagonal",
+            "Straight",
+            "K",
+            "Boolean"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which statement below best describes a Karnaugh map?",
+        "options": [
+            "It is simply a rearranged truth table",
+            "The Karnaugh map eliminates the need for using NAND and NOR gates",
+            "Variable complements can be eliminated by using Karnaugh maps",
+            "A Karnaugh map can be used to replace Boolean rules"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the examples below expresses the commutative law of multiplication?",
+        "options": [
+            "A + B = B + A",
+            "A • B = B + A",
+            "A • (B • C) = (A • B) • C",
+            "A • B = B • A"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The Boolean expression Y = (AB)’ is logically equivalent to what single gate?",
+        "options": [
+            "NAND",
+            "NOR",
+            "AND",
+            "OR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The observation that a bubbled input OR gate is interchangeable with a bubbled output AND gate is referred to as __________________",
+        "options": [
+            "A Karnaugh map",
+            "DeMorgan’s second theorem",
+            "The commutative law of addition",
+            "The associative law of multiplication"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "The systematic reduction of logic circuits is accomplished by _______________",
+        "options": [
+            "Symbolic reduction",
+            "TTL logic",
+            "Using Boolean algebra",
+            "Using a truth table"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Each “1” entry in a K-map square represents _______________",
+        "options": [
+            "A HIGH for each input truth table condition that produces a HIGH output",
+            "A HIGH output on the truth table for all LOW input combinations",
+            "A LOW output for all possible HIGH input conditions",
+            "A DON’T CARE condition for all possible input truth table combinations"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Each “0” entry in a K-map square represents _______________",
+        "options": [
+            "A HIGH for each input truth table condition that produces a HIGH output",
+            "A HIGH output on the truth table for all LOW input combinations",
+            "A LOW output for all possible HIGH input conditions",
+            "A DON’T CARE condition for all possible input truth table combinations"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following statements accurately represents the two BEST methods of logic circuit simplification?",
+        "options": [
+            "Actual circuit trial and error evaluation and waveform analysis",
+            "Karnaugh mapping and circuit waveform analysis",
+            "Boolean algebra and Karnaugh mapping",
+            "Boolean algebra and actual circuit trial and error evaluation"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Looping on a K-map always results in the elimination of __________",
+        "options": [
+            "Variables within the loop that appear only in their complemented form",
+            "Variables that remain unchanged within the loop",
+            "Variables within the loop that appear in both complemented and uncomplemented form",
+            "Variables within the loop that appear only in their uncomplemented form"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following expressions is in the sum-of-products form?",
+        "options": [
+            "(A + B)(C + D)",
+            "(A * B)(C * D)",
+            "A* B *(CD)",
+            "A * B + C * D"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Which of the following is an important feature of the sum-of-products form of expressions?",
+        "options": [
+            "All logic circuits are reduced to nothing more than simple AND and OR operations",
+            "The delay times are greatly reduced over other forms",
+            "No signal must pass through more than two gates, not including inverters",
+            "The maximum number of gates that any signal must pass through is reduced by a factor of two"
+        ],
+        "answer": 0
+    }
 ]
