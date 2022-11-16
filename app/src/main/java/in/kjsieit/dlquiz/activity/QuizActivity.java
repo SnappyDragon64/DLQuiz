@@ -2,6 +2,7 @@ package in.kjsieit.dlquiz.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.widget.Button;
 import android.widget.TextView;
@@ -95,6 +96,9 @@ public class QuizActivity extends AppCompatActivity {
             switch (phase) {
                 case ANSWER:
                     if (current.getAnswer() == selectedId) {
+                        MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.correct);
+                        mp.start();
+
                         if (streakCtr == -1) streakCtr = 0;
                         streakCtr++;
                         TextView scoreView = findViewById(R.id.score);
@@ -107,6 +111,9 @@ public class QuizActivity extends AppCompatActivity {
                         else
                             hardCtr++;
                     } else {
+                        MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.wrong);
+                        mp.start();
+
                         streakCtr = streakCtr == -1 ? -2 : -1;
                         options[selectedId].setBackgroundColor(getResources().getColor(R.color.red));
                     }
